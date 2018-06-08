@@ -1,0 +1,47 @@
+\BOOKMARK [0][-]{chapter*.5}{List of Figures}{}% 1
+\BOOKMARK [0][-]{chapter*.6}{List of Tables}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Northern Ghana characteristics}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{ASR systems}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{PIT \046 Irrigation purpose}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Fieldwork data analysis}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Parameter derivation methods}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Theoretical model definition}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{Techniques in analysis}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.3}{Optimization functions}{section.2.1}% 11
+\BOOKMARK [1][-]{section.2.2}{From fieldwork data to T \046 S values}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Location: Bingo}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Location: Nungo}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Location: Nyong Nayili}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.4}{Location: Janga \(1/2\)}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.5}{Location: Janga \(2/2\)}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.6}{Location: Ziong \(monitoring\)}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Theoretical validation}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.4}{Fieldwork results}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{Model scenarios}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Scenarios}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Test criteria}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Run}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.4}{Results \046 Conclusions}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{\(Financial\) yields - upscaling}{}% 26
+\BOOKMARK [1][-]{section.4.1}{inhoud}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 28
+\BOOKMARK [0][-]{chapter.6}{Discussion \046 Recommendations}{}% 29
+\BOOKMARK [0][-]{chapter*.23}{Bibliography}{}% 30
+\BOOKMARK [0][-]{appendix*.24}{Appendices}{}% 31
+\BOOKMARK [0][-]{appendix.A}{Original Borehole Logsheets}{}% 32
+\BOOKMARK [0][-]{appendix.B}{Fieldwork set-up}{}% 33
+\BOOKMARK [1][-]{section.B.1}{Equipment}{appendix.B}% 34
+\BOOKMARK [1][-]{section.B.2}{General measurement structure}{appendix.B}% 35
+\BOOKMARK [1][-]{section.B.3}{Site-specific measurement results}{appendix.B}% 36
+\BOOKMARK [0][-]{appendix.C}{Extense report - Fieldwork data analysis}{}% 37
+\BOOKMARK [1][-]{section.C.1}{Bingo - overview}{appendix.C}% 38
+\BOOKMARK [1][-]{section.C.2}{Nungo - overview}{appendix.C}% 39
+\BOOKMARK [1][-]{section.C.3}{Nyong Nayili - overview}{appendix.C}% 40
+\BOOKMARK [1][-]{section.C.4}{Janga first attempt - overview}{appendix.C}% 41
+\BOOKMARK [1][-]{section.C.5}{Janga second attempt - overview}{appendix.C}% 42
+\BOOKMARK [1][-]{section.C.6}{Ziong - overview}{appendix.C}% 43
+\BOOKMARK [0][-]{appendix.D}{Modflow radial conversion}{}% 44
+\BOOKMARK [1][-]{section.D.1}{Test 1: Steady flow to a fully penetrating well in confined aquifer}{appendix.D}% 45
+\BOOKMARK [1][-]{section.D.2}{Test 2: Steady flow to a fully penetrating well in unconfined aquifer}{appendix.D}% 46
+\BOOKMARK [1][-]{section.D.3}{Test 3: Unsteady flow to a partially penetrating well in unconfined aquifer}{appendix.D}% 47

@@ -1,0 +1,121 @@
+\documentclass[whitelogo,11pt,a4paper]{tudelft-report}
+\usepackage[english]{babel}
+\hyphenation{an-iso-tropy}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{changes}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{rotate}
+\usepackage{geometry}
+\geometry{a4paper, total={170mm, 257mm}, left=20mm, right=20mm}
+\usepackage[toc]{appendix}
+%\usepackage[none]{hyphenat}  % wordbreak off
+\usepackage{hyphenat}
+\usepackage{hyperref}
+%\hypersetup{breaklinks=true}
+\usepackage{lipsum}
+\usepackage{lineno}
+\linenumbers
+\numberwithin{equation}{chapter}
+\graphicspath{{./Figures/}}
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+\setlength{\parindent}{0pt}   % no indents at textstart
+\hypersetup{colorlinks=true,urlcolor=blue}
+\urlstyle{same}
+\usepackage{listings}
+\usepackage{pythonhighlight}
+
+\begin{document}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+%% Uncomment following 19 lines for a cover with a picture
+%\title[tudelft-white]{Title}
+%\subtitle[tudelft-cyan]{Optional subtitle}
+%\author[tudelft-white]{J.\ Random Author}
+%\affiliation{Technische Universiteit Delft}
+%\coverimage{cover.jpg}
+%\titleoffsetx{10cm}
+%\titleoffsety{10cm}
+%\afiloffsetx{1cm}
+%\afiloffsety{18cm}
+%\covertext[tudelft-white]{
+%    \textbf{Cover Text} \\
+%    possibly \\
+%    spanning 
+%    multiple 
+%    lines
+%    \vfill
+%    ISBN 000-00-0000-000-0
+%}
+%\makecover
+
+%% Uncomment following 16 lines for a cover with a picture on the lower half only
+%\font\headfont=cmr12 at 34pt
+\title[tudelft-white]{Upscaling aquifer storage \\ and recovery (ASR)}
+%\font\subfont=cmr12 at 26pt
+\subtitle[tudelft-black]{A northern Ghana multiple case study \\ on small scale agriculture}
+%\font\namefont=cmr12 at 22pt
+\author[tudelft-white]{Frank J.\ van den Toorn}
+\affiliation{Technische Universiteit Delft}
+\coverimage{ASR_system.jpg}
+\covertext[tudelft-white]{
+    \textbf{} \\
+%    covertext\\
+%  	 possibly \\
+%    spanning 
+%    multiple 
+%    lines
+    \vfill
+%    ISBN 000-00-0000-000-0
+    }
+\setpagecolor{tudelft-cyan}
+%\makecover[split]
+
+
+%% Include an optional title page.
+\input{title}
+\input{preface}
+\input{summary}
+\tableofcontents
+\listoffigures
+\listoftables
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+
+%%%\input{chapter-1}
+\input{introduction}
+%%%\input{theoretical_background}
+%%%\input{northern_ghana}
+\input{fieldwork_data_analysis}
+\input{model_scenarios}
+\input{financial_yields}
+\input{conclusions}
+\input{discussion_recommandations}
+
+\bibliography{biblio}
+
+%% Use letters for the chapter numbers of the appendices.
+
+
+\appendix
+%\input{appendix-a}
+\input{appendices}
+\addcontentsline{toc}{chapter}{Appendices}
+% geforceerd toevoegen aan contents lijst
+\input{Borehole_logsheets}
+\input{pumping_test_setup}
+\input{Extense_fieldwork_analysis}
+\input{modflow_radial_conversion}
+
+\end{document}
+
