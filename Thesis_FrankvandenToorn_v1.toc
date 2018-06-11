@@ -10,15 +10,15 @@
 \contentsline {subsection}{\numberline {2.1.1}Theoretical model definition}{6}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Techniques in analysis}{6}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Optimization functions}{7}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}From fieldwork data to T \& S values}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Location: Bingo}{9}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.2}From fieldwork data to $T$ \& $S$ values}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Location: Bingo}{8}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Location: Nungo}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Location: Nyong Nayili}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Location: Nyong Nayili}{9}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Location: Janga (1/2)}{10}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Location: Janga (2/2)}{11}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.5}Location: Janga (2/2)}{10}{subsection.2.2.5}
 \contentsline {subsection}{\numberline {2.2.6}Location: Ziong (monitoring)}{11}{subsection.2.2.6}
 \contentsline {section}{\numberline {2.3}Theoretical validation}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Fieldwork results}{12}{section.2.4}
+\contentsline {section}{\numberline {2.4}Fieldwork results}{11}{section.2.4}
 \contentsline {chapter}{\numberline {3}Model scenarios}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Scenarios}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Test criteria}{13}{section.3.2}
