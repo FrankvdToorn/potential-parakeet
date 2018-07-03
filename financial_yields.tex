@@ -1,3 +1,87 @@
 \chapter{(Financial) yields - upscaling}
-kostenplaatje
-\section{inhoud}
+explain why this chapter. create feeling of where are we talking about. 
+
+\section{From water volumes to cover area}
+
+\subsection{Crops of interest}
+
+\textbf{Maize}
+- theory on crop-use in country, en duration of season. so how many seasons possible in 8 months. en waardoor deze gekozen. 
+- crop footprint. usable under the conditions of always sufficient water available. So this is assumed in my calculations.
+- Financial: $\$_{US}$/kg 
+
+\textbf{Groundnut}
+
+\textbf{chili peper}
+or onion, cucumber, tomatoes, carrots
+
+
+\subsection{Cover area (crop specific)}
+
+\textbf{irrigation rendament} 
+theorie over verschillende vormen van irrigatie. Maar uiteindelijk van drip-irrigation uitgegaan. Want wordt aldaar toegepast en heeft hoog rendament.
+
+Uitiendelijk een nieuwe tabel of figuur met de net volumes present. 
+
+\textbf{cover area} 
+Aan de hand van plaatje nieuwe term uitleggen. C\% = (crop cover area (m2) / model circle area (m2)) x 100 \%. Waarbij die model circle area, mogelijk nog scenario (1tot5) dependent gemaakt kan worden!. hoe definieer ik de area of influence. Daar waar over het gehele jaar de drawdown door pompen nooit groter is dan .. (1m bijv) m. oid?
+vergeet niet om te delen door 2 vanwege twee cropping seasons. 
+
+dit zegt uiteindelijk iets over hoe dicht op elkaar die agricultural fields geplaatsen kunnen gaan worden. Aansluitend of zit er toch wel veel ruimte tussen. 
+
+\section{Financial yield}
+
+\subsection{Energy Consumption}
+efficiency = efficiency generator * efficiency overbrenging * efficiency pump
+
+\begin{equation}
+ \eta_{total} =   \eta_{generator} * \eta_{transmission} * \eta_{pump} = 0.6 (-)
+\end{equation}
+
+Where $\eta_{total}$ (-) is the overall power efficiency, $\eta_{generator}$ (-) is the generator power efficiency, $\eta_{transmission}$ (-) is the transmission power efficiency and $\eta_{pump}$ (-) is the pump power efficiency. 
+
+aanames voor efficieny zeker mbt efficieny generator and transmission. pump efficieny potentially based on curve and not constant?
+
+\begin{equation}
+N_{net} =  g * Q * DeltaH
+\end{equation}
+
+Where $N_{net}$ (kW) is the net power required, g (m/s$^2$) is the gravitational acceleration (9.81 m/s$^2$), Q (m$^3$/s) is the discharge (total extracted volume of water over the yearly sum of pumping time (in seconds)) and $\Delta$H (m) is the net head (total lift) required. In this equation it is assumed the water has a density of 1000 kg/m$^3$.
+  
+\begin{equation}
+ N_{gross} =   \frac{N_{net}}{\eta_{total}}
+\end{equation}
+
+Where $N_{gross}$ (kW) is the gross power required, $N_{net}$ (kW) is the net power required and $\eta_{total}$ (-) is the overall power efficiency. 
+
+zoveel (bruto) vermogen moet worden geleverd om zoveel maize te produceren.
+doe je dit maal het aantal pompuren dan krijg je het verbruik (kWh) van de pomp om zoveel maize te produceren. 
+translaten towards USdollar if source present about financiel yield of 1kg maize. 
+ 
+
+\subsection{Pump energy costs}
+only pumping costs taken into consideration. geen vaste lasten, afschrijvingstijd, well plaatsingskosten etc. 
+
+two appoaches: 
+\textbf{approach 1}
+Generator fuel consumption: 0.25 kg/kWh (assumed, source:?)
+density diesel: 0.84 kg/l (source?
+Price diesel: 4.95 GHS/l
+GHS to USD exchange rate is 0.2082 USD/GHS (Bloomberg)
+combined: Fuel consumption costs: USD/kWh 
+
+\textbf{approach 2}
+Fuel price is 4.95 GHS/l. GHS to USD exchange rate is 0.2082 USD/GHS (Bloomberg)
+Fuel price is 1.03059 USD/l 
+Fuel consumption: 15 liter in 6.5 hours (2.307692308 l/h)
+generates 4.5 kW continuously. 
+zoek bijbehorende exacte prijzen en bronnen!
+
+total costs = (Fuel price * exchange rate) * (fuel consumption * yearly total pumping hours)
+
+maar hoe weet je dan of het totaal aantal benodigde gross power is reached?
+hieveel kost het dat vermogen te leveren? 
+
+\subsection{Net financial impact (crop specific)}
+
+doe ik dit alles voor 1 scenario of voor allemaal? 

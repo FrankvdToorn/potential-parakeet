@@ -648,7 +648,7 @@
 \renewcommand*\labelitemiv{\color{title}\textperiodcentered}
 
 %% Use a custom bibliography style based on apsrev4-1.
-\bibliographystyle{tudelft-report}
+%\bibliographystyle{tudelft-report}  % zelf uitgezet.. conflicterend
 
 %% Hyperlinks are cyan, except in print mode, when they are all black.
 \hypersetup{
