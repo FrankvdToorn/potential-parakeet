@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{natbib}
+%\usepackage[]{natbib}
 \usepackage{changes}
 \usepackage{pdfpages}
 \usepackage{graphicx}
@@ -30,6 +31,8 @@
 \urlstyle{same}
 \usepackage{listings}
 \usepackage{pythonhighlight}
+\usepackage{cite}
+
 
 \begin{document}
 
@@ -80,6 +83,7 @@
 \setpagecolor{tudelft-cyan}
 %\makecover[split]
 
+%\setkeys{Gin}{draft=true}        %plaatjes wel of niet inladen (false is aan, true is uit) en werkt ook opvolgend aan en uit per hoofdstuk bijvoorbeeld. 
 
 %% Include an optional title page.
 \input{title}
@@ -102,7 +106,11 @@
 \input{conclusions}
 \input{discussion_recommandations}
 
-\bibliography{biblio}
+
+%\bibliographystyle{apa}
+\bibliographystyle{apalike}
+%\def\biblio{\bibliographystyle{apalike}\bibliography{Mendeley_v1}}
+\bibliography{Mendeley_v1}
 
 %% Use letters for the chapter numbers of the appendices.
 
@@ -116,6 +124,7 @@
 \input{pumping_test_setup}
 \input{Extense_fieldwork_analysis}
 \input{modflow_radial_conversion}
+\input{Extense_Modflow_model}
 
 \end{document}
 

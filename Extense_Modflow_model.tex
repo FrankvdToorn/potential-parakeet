@@ -1,0 +1,36 @@
+\chapter{Extense report - MODFLOW model definition}
+\label{chapter:Extense_Modflow_model}
+
+\section{Leakage factor $\lambda$}
+\label{section:Leakage_factor}
+
+MODFLOW model extent is based on the double layer leakage factor. The analytical solution for the leakage factor ($\lambda$) is depicted in equation \ref{eq:lambda_an} (bron geo1 lecture notes week3). 
+
+\begin{equation}
+ \lambda = \sqrt{\frac{c * T_0 * T_1}{T_0 + T_1}}
+ \label{eq:lambda_an}
+\end{equation}  
+
+where $\lambda$ is the leakage factor (m), $c$ (d) is the resistance of the leaky layer between aquifer one and two and $T_0$ and $T_1$ are the transmissivities of respectively aquifer one and two. \\
+
+As a source of input the optimal values ($T_0$ and $T_1$) determined by fieldwork analysis TTim (\texttt{Fmin}); double layer system and the system with a double layer and partial penetration of the well are used. In TTim \texttt{Model3D} soil stratification is not characterized by a regular sequence of alternately aquifers and leaky layers. TTim \texttt{Model3D} houses an accumulation of aquifers. Resistance of the fictive leaky layer is computed from the middle of first layer to the middle of the second layer \citep{Bakker2013,Mishra2013}. For the determination of of the leakage factor an vertical anisotropy of 0.25 (-) is assumed. An overview of all generate leakage factors can be found in Table \ref{tab:Lambda_overview}. \\
+
+\begin{table}[h!]
+%\small
+\centering
+\caption{Lambda (m) overview per location}
+\resizebox{\columnwidth}{!}{%
+\label{tab:Lambda_overview}
+\begin{tabular}{l|rr|rr|rr|rr|rr}
+
+{} &  Bingo 2lay &  Bingo 2lay pp &  Nyong Nayili 2lay &  Nyong Nayili 2lay pp &  Janga (1/2) 2lay &  Janga (1/2) 2lay pp &  Janga (2/2) 2lay &  Janga (2/2) 2lay pp &  Ziong 2lay &  Ziong 2lay pp \\
+SC &             &                &                    &                       &                   &                      &                   &                      &             &                \\
+a  &       31.11 &          31.11 &              33.94 &                 33.94 &             51.51 &                17.01 &             51.95 &                20.10 &       35.25 &          32.31 \\
+b  &       31.27 &          31.11 &              36.77 &                 33.96 &             52.33 &                34.56 &             52.33 &                17.01 &       35.27 &          31.82 \\
+c  &       31.38 &          31.25 &              35.32 &                 36.77 &             52.33 &                51.15 &             52.33 &                38.37 &       32.29 &          31.56 \\
+d  &       31.21 &          31.20 &              33.94 &                 36.77 &             52.33 &                52.33 &             27.97 &                49.54 &       34.42 &          32.13 \\
+\end{tabular}%
+}
+\end{table}
+
+A model extent of 3 to 4 times the leakage factor (characteristic length) is desirable. By meeting this requirement it can be expected that 95-99\% of the actual water flow is taken into account by the model. Moreover, the head at the model tail is by approximation no longer affected by the (centrally positioned) well behaviour. The assumption of a constant head at model tail becomes valid (bron geo1 lecture notes week3). The majority of the leakage factors are in close range of the 36.74 m average leakage factor of obtained. To comply the above mentioned requirement a total model extent (radius) of 150 m is implemented.

@@ -1,8 +1,66 @@
-\begin{thebibliography}{0}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
+
+\bibitem[Bakker, 2013a]{Mishra2013}
+Bakker, M. (2013a).
+\newblock {Analytical Modeling of Transient Multilayer Flow}.
+\newblock In Mishra, P.~K. and Kuhlman, K.~L., editors, {\em Advances in
+  Hydrogeology}, volume 9781461464, chapter Chapter 5, pages 95--114. Springer
+  Science+Business Media, New York, NY.
+
+\bibitem[Bakker, 2013b]{Bakker2013}
+Bakker, M. (2013b).
+\newblock {Semi-analytic modeling of transient multi-layer flow with TTim}.
+\newblock {\em Hydrogeology Journal}, 21(4):935--943.
+
+\bibitem[Bakker and Anderson, 2011]{Bakker2011}
+Bakker, M. and Anderson, E.~I. (2011).
+\newblock {Mechanics of Groundwater Flow}.
+\newblock In Wilderer, P., editor, {\em Treatise on Water Science}, pages
+  115--134. Academic Press, Oxford, United Kingdom, vol. 2 edition.
+
+\bibitem[Fitts, 2012]{Fitts2012}
+Fitts, C.~R. (2012).
+\newblock {\em {Groundwater Science}}.
+\newblock Academic Press, Oxford, United Kingdom, scond edit edition.
+
+\bibitem[Harbaugh, 2005]{HarbaughArlen2005}
+Harbaugh, A.~W. (2005).
+\newblock {MODFLOW-2005 , The U . S . Geological Survey Modular Ground-Water
+  Model — the Ground-Water Flow Process}.
+\newblock {\em U.S. Geological Survey Techniques and Methods}, page 253.
+
+\bibitem[Kruseman and de~Ridder, 2000]{Kruseman2000}
+Kruseman, G. and de~Ridder, N. (2000).
+\newblock {\em {Analysis and evaluation of pumping test data}}.
+\newblock International Institute for Land Reclanation and Improvement (ILRI),
+  Wageningen, The Netherlands, second edi edition.
+
+\bibitem[Langevin, 2008]{Langevin2008}
+Langevin, C.~D. (2008).
+\newblock {Modeling axisymmetric flow and transport}.
+\newblock {\em Ground Water}, 46(4):579--590.
+
+\bibitem[Niswonger et~al., 2011]{Niswonger2011}
+Niswonger, R.~G., Panday, S., and Motomu, I. (2011).
+\newblock {MODFLOW-NWT , A Newton Formulation for MODFLOW-2005}.
+\newblock {\em USGS reports}.
+
+\bibitem[Owusu et~al., 2017]{Owusu2017}
+Owusu, S., Cofie, O.~O., Osei-Owusu, P.~K., Awotwe-Pratt, V., and Mul, M.~L.
+  (2017).
+\newblock {Adapting aquifer storage and recovery technology to the flood-prone
+  areas of northern Ghana for dry-season irrigation}.
+\newblock {\em Working Paper 176}.
+
+\bibitem[Owusu et~al., 2015]{Owusu2015}
+Owusu, S., Mul, M., Ghansah, B., Awotwe-pratt, V., and Osei, P.~K. (2015).
+\newblock {Technical Report: Identification and selection of suitable sites for
+  Bhungroo and Pave Irrigation Technologies}.
+\newblock pages 1--61.
+
+\bibitem[Strack, 1989]{Strack1989}
+Strack, O. D.~L. (1989).
+\newblock {\em {Groundwater Mechanics}}.
+\newblock Prentice Hall, Englewood Cliffs, New Jersey.
 
 \end{thebibliography}
