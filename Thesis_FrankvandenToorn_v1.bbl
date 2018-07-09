@@ -18,16 +18,60 @@ Bakker, M. and Anderson, E.~I. (2011).
 \newblock In Wilderer, P., editor, {\em Treatise on Water Science}, pages
   115--134. Academic Press, Oxford, United Kingdom, vol. 2 edition.
 
+\bibitem[Bloomberg, 2018]{Bloomberg2018}
+Bloomberg (2018).
+\newblock {GHS-USD Cross rate currency}.
+
+\bibitem[Bot, 2016]{Bot2016}
+Bot, B. (2016).
+\newblock {\em {Grondwaterzakboekje Gwz2016}}.
+\newblock Bot Raadgevend Ingenieur, Rotterdam.
+
+\bibitem[FAO, 2018a]{FoodandAgriculturalOrganisationoftheUnitedNationsFAO2018a}
+FAO (2018a).
+\newblock {Crop information - Groundnut}.
+
+\bibitem[FAO, 2018b]{FoodandAgriculturalOrganisationoftheUnitedNationsFAO2018}
+FAO (2018b).
+\newblock {FAOSTAT - download data - crops}.
+
 \bibitem[Fitts, 2012]{Fitts2012}
 Fitts, C.~R. (2012).
 \newblock {\em {Groundwater Science}}.
 \newblock Academic Press, Oxford, United Kingdom, scond edit edition.
+
+\bibitem[Ghana-made, 2018]{Ghana-made2018}
+Ghana-made (2018).
+\newblock {Groundnut}.
+
+\bibitem[GlobalPetrolPrices, 2018]{GlobalPetrolPrices2018}
+GlobalPetrolPrices (2018).
+\newblock {Ghana diesel price (litre)}.
 
 \bibitem[Harbaugh, 2005]{HarbaughArlen2005}
 Harbaugh, A.~W. (2005).
 \newblock {MODFLOW-2005 , The U . S . Geological Survey Modular Ground-Water
   Model — the Ground-Water Flow Process}.
 \newblock {\em U.S. Geological Survey Techniques and Methods}, page 253.
+
+\bibitem[Harbaugh et~al., 2000]{Harbaugh2000}
+Harbaugh, B. A.~W., Banta, E.~R., Hill, M.~C., and Mcdonald, M.~G. (2000).
+\newblock {MODFLOW-2000 , The U .S . Geological Survey modular graound-water
+  model — User guide to modularization concepts and the ground-water flow
+  process}.
+\newblock {\em U.S. Geological Survey}, page 130.
+
+\bibitem[{Houghton Mifflin}, 2016]{HoughtonMifflin2016}
+{Houghton Mifflin} (2016).
+\newblock {\em {American Heritage Dictionary of the English Language}}.
+\newblock Houghton Mifflin, Boston, MA, United States, fifth edition.
+
+\bibitem[Konikow et~al.,
+  2009]{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}
+Konikow, L.~F., Hornberger, G.~Z., Halford, K.~J., and Hanson, R.~T. (2009).
+\newblock {Revised Multi-Node Well ( MNW2 ) Package for MODFLOW Ground-Water
+  Flow Model Techniques and Methods 6 – A30}.
+\newblock {\em Methods}, page~80.
 
 \bibitem[Kruseman and de~Ridder, 2000]{Kruseman2000}
 Kruseman, G. and de~Ridder, N. (2000).
@@ -39,6 +83,10 @@ Kruseman, G. and de~Ridder, N. (2000).
 Langevin, C.~D. (2008).
 \newblock {Modeling axisymmetric flow and transport}.
 \newblock {\em Ground Water}, 46(4):579--590.
+
+\bibitem[{Modern Ghana}, 2018]{ModernGhana2018}
+{Modern Ghana} (2018).
+\newblock {Esoko market}.
 
 \bibitem[Niswonger et~al., 2011]{Niswonger2011}
 Niswonger, R.~G., Panday, S., and Motomu, I. (2011).
@@ -62,5 +110,14 @@ Owusu, S., Mul, M., Ghansah, B., Awotwe-pratt, V., and Osei, P.~K. (2015).
 Strack, O. D.~L. (1989).
 \newblock {\em {Groundwater Mechanics}}.
 \newblock Prentice Hall, Englewood Cliffs, New Jersey.
+
+\bibitem[TS24, 2018]{TS242018}
+TS24 (2018).
+\newblock {KIPOR KDE6700T DIESEL GENERATOR}.
+
+\bibitem[van~de Giesen, 2013]{VandeGiesen2013}
+van~de Giesen, N. (2013).
+\newblock {Dictaat CTB2120 Waterbeheer}.
+\newblock Technical report, Delft Univeristy of Technology, Delft.
 
 \end{thebibliography}
