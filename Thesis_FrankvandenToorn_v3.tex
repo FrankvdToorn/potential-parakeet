@@ -1,0 +1,145 @@
+\documentclass[whitelogo,11pt,a4paper]{tudelft-report}
+\usepackage[english]{babel}
+\hyphenation{an-iso-tropy}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{natbib}
+%\usepackage[]{natbib}
+\usepackage{changes}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{rotate}
+\usepackage{geometry}
+\geometry{a4paper, total={170mm, 257mm}, left=20mm, right=20mm}
+\usepackage[toc]{appendix}
+%\usepackage[none]{hyphenat}  % wordbreak off
+\usepackage{hyphenat}
+\usepackage{hyperref}
+%\hypersetup{breaklinks=true}
+\usepackage{lipsum}
+\usepackage{lineno}
+%\linenumbers
+\numberwithin{equation}{chapter}
+\graphicspath{{./Figures/}}
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+\setlength{\parindent}{0pt}   % no indents at textstart
+\hypersetup{colorlinks=true,urlcolor=blue}
+\urlstyle{same}
+\usepackage{listings}
+\usepackage{pythonhighlight}
+\usepackage{cite}
+
+
+\begin{document}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+%% Uncomment following 19 lines for a cover with a picture
+%\title[tudelft-white]{Title}
+%\subtitle[tudelft-cyan]{Optional subtitle}
+%\author[tudelft-white]{J.\ Random Author}
+%\affiliation{Technische Universiteit Delft}
+%\coverimage{cover.jpg}
+%\titleoffsetx{10cm}
+%\titleoffsety{10cm}
+%\afiloffsetx{1cm}
+%\afiloffsety{18cm}
+%\covertext[tudelft-white]{
+%    \textbf{Cover Text} \\
+%    possibly \\
+%    spanning 
+%    multiple 
+%    lines
+%    \vfill
+%    ISBN 000-00-0000-000-0
+%}
+%\makecover
+ 
+%% Uncomment following 16 lines for a cover with a picture on the lower half only
+%\font\headfont=cmr12 at 34pt
+\title[tudelft-white]{Aquifer Storage \& Recovery \\ (ASR) system improvement \\ in northern Ghana}
+%\font\subfont=cmr12 at 26pt
+%\subtitle[tudelft-black]{}
+%\font\namefont=cmr12 at 22pt
+\author[tudelft-white]{Frank J.\ van den Toorn}
+\affiliation{Technische Universiteit Delft}
+\coverimage{ASR_system.jpg}
+\covertext[tudelft-white]{
+    \textbf{} \\
+%    covertext\\
+%  	 possibly \\
+%    spanning 
+%    multiple 
+%    lines
+    \vfill
+%    ISBN 000-00-0000-000-0
+    }
+\setpagecolor{tudelft-cyan}
+%\makecover[split]
+
+%\setkeys{Gin}{draft=true}        %plaatjes wel of niet inladen (false is aan, true is uit) en werkt ook opvolgend aan en uit per hoofdstuk bijvoorbeeld. 
+
+%% Include an optional title page.
+%\includepdf[pages={1}]{Cover_FrankvdToorn.pdf} % cover nu even uitgezet voor gebruiktgemak
+\input{title}
+\input{preface}
+\input{summary}
+\tableofcontents
+\listoffigures
+\listoftables
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+
+%\setkeys{Gin}{draft=true}        %plaatjes wel of niet inladen (false is aan, true is uit) en werkt ook opvolgend aan en uit per hoofdstuk bijvoorbeeld.
+
+\input{introduction}
+%\input{Methods}
+\input{fieldwork_data_analysis}
+%\setkeys{Gin}{draft=False}        %plaatjes wel of niet inladen (false is aan, true is uit) en werkt ook opvolgend aan en uit per hoofdstuk bijvoorbeeld.
+
+%\setkeys{Gin}{draft=false}  
+\input{model_scenarios}
+\input{financial_yields}
+%\setkeys{Gin}{draft=true}        %plaatjes wel of niet inladen (false is aan, true is uit) en werkt ook opvolgend aan en uit per hoofdstuk bijvoorbeeld.
+%%%\input{discussion}
+\input{discussion}
+\input{conclusions}
+%\setkeys{Gin}{draft=true} 
+
+
+%%%\input{chapter-1}
+%%%\input{theoretical_background}
+%%%\input{northern_ghana}
+
+%\bibliographystyle{apa}
+%\def\biblio{\bibliographystyle{apalike}\bibliography{Mendeley_v1}}
+\bibliographystyle{apalike}
+\bibliography{Mendeley_v1}
+
+%% Use letters for the chapter numbers of the appendices.
+
+\appendix
+\input{appendices}
+\addcontentsline{toc}{chapter}{Appendices}
+% geforceerd toevoegen aan contents lijst
+\input{Borehole_logsheets}
+\input{Fieldwork_data_results}
+\input{pumping_test_setup}
+\input{Extense_fieldwork_analysis}
+\input{Extense_Modflow_model}
+\input{modflow_radial_conversion}
+%\setkeys{Gin}{draft=false}        %plaatjes wel of niet inladen (false is aan, true is uit) en werkt ook opvolgend aan en uit per hoofdstuk bijvoorbeeld.
+\input{Modflow_addition_results}
+\input{Pedrollo_pump}
+
+%\includepdf[pages={1,2}]{Cover_back_blank_page_FrankvdToorn.pdf}
+
+\end{document}
+

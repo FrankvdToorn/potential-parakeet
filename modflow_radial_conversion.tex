@@ -1,4 +1,4 @@
-\chapter{MODFLOW radial conversion}
+\chapter{MODFLOW - Radial conversion}
 \label{MODFLOW_radial}
 
 \textbf{Introduction} \\
@@ -44,17 +44,17 @@ To validate the radial scaled model performance, a total of three fictive test e
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.5\linewidth}
-		\centering\includegraphics[width=0.9\linewidth]{Rectangular_grid}
+		\centering\includegraphics[width=0.9\linewidth]{NWT-Rectangular_grid}
 		\captionsetup{justification=centering}		
 		\caption{\label{fig:Rectangular model}}
 		\end{subfigure}%\hfill
 	\begin{subfigure}[b]{0.5\linewidth}
-        \centering\includegraphics[width=0.9\linewidth]{Rectangular_Round_grid}
+        \centering\includegraphics[width=0.9\linewidth]{NWT-Rectangular_Round_grid}
 		\captionsetup{justification=centering}		
 		\caption{\label{fig:Rectangular round model}}
 		\end{subfigure}
 	\begin{subfigure}[b]{\linewidth}
-        \centering\includegraphics[width=0.95\linewidth]{Radial_grid}
+        \centering\includegraphics[width=0.95\linewidth]{NWT-Radial_grid}
 		\captionsetup{justification=centering}		
 		\caption{\label{fig:Single row model}}
 		\end{subfigure}
@@ -95,7 +95,7 @@ Decline in groundwater head due to well behaviour can also be expressed directly
 Where $phi_j$ is the discharge potential at column j, Q is the discharge, R = 100 m (constant head (h$_0$) at a distance of in this case 100 m from the well), $r_j$ is the radial distance between column $j$ and the well (column 1), K$_{(h)}$ is the horizontal hydraulic conductivity and H is the aquifer thickness.\\
 
 \tikzstyle{mybox} = [draw=black, fill=white, very thick,
-    rectangle, rounded corners, inner sep=20pt, inner ysep=20pt]
+    rectangle, rounded corners, inner sep=15pt, inner ysep=15pt]
 \tikzstyle{title} =[fill=black, text=white]
 
 %\begin{tikzpicture}
@@ -108,7 +108,7 @@ Where $phi_j$ is the discharge potential at column j, Q is the discharge, R = 10
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}
-\node [mybox] (box){\includegraphics[width=0.8\linewidth]{Schematic_test1}};  
+\node [mybox] (box){\includegraphics[width=0.6\linewidth]{Schematic_test1}};  
 \node[title, right=10pt] at (box.north west) {Schematic test 1};
 \end{tikzpicture}
 \captionsetup{justification=centering}
@@ -119,7 +119,7 @@ Where $phi_j$ is the discharge potential at column j, Q is the discharge, R = 10
 The rectangular MODFLOW model overestimates drawdown (modelled heads are slightly lower) compared tot the analytical solution. This difference can be explained by the rectangular shape of the model; imposed boundary condition along the model edge (especially the corners) are positioned 'outside' the defined radial boundary of 100 m from the well. The rectangular round model works around this inconvenience, and already shows more similarities with the analytical solution. Some deviation in the first meter(s) around the well still exist, which can potentially be attributed to the cell structure. These minor deviations are no longer present by the application of the radial scaled (single row) model. Regardless the (radial) position, modelled heads and drawdown are identical to the analytical solution. A first indication the radial scaled MODFLOW model is preferential applicable on this thesis purposes.  
 
 \begin{figure}[h!]
- \centering\includegraphics[width=0.8\linewidth]{Test_1_Results}
+ \centering\includegraphics[width=1.0\linewidth]{NWT-Test_1_Results}
  \captionsetup{justification=centering}
  \caption{Results test 1}
  \label{fig:Test1_results}
@@ -163,7 +163,7 @@ Where $phi_j$ is the discharge potential at column j, Q is the discharge, R = 10
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}
-\node [mybox] (box){\includegraphics[width=0.8\linewidth]{Schematic_test2}};  
+\node [mybox] (box){\includegraphics[width=0.6\linewidth]{Schematic_test2}};  
 \node[title, right=10pt] at (box.north west) {Schematic test 2};
 \end{tikzpicture}
 \captionsetup{justification=centering}
@@ -171,15 +171,25 @@ Where $phi_j$ is the discharge potential at column j, Q is the discharge, R = 10
 \label{fig:Schematictest2}
 \end{figure}
 
+\subsection{Constant head is 10 m}
 Due to a 10 m constant head boundary the aquifer area of flow is fictive enlarged in the unconfined case (compared to the 8 m aquifer height under confined conditions). In accordance with the solutions in \citet{Langevin2008}, overall drawdowns in the unconfined conditions are slightly lower with respect to the confined situation. 
 \bigskip
 Model performances of the unconfined example exercise show similar behaviour as the confined example exercise. Differences in modelled and analytical determined heads and drawdowns are minuscule in general. As expected largest deviations from the analytical solution are present in the MODFLOW rectangular model. The differences in outcome of this model do persist over almost the entire radial distance from the well, regardless the use of the \texttt{BCF} or \texttt{LPF} package. Although it is only slightly, the use of the \texttt{LPF} package shows slightly better performance. For the purposes of this thesis the \texttt{LPF} package is assumed to be preferential in setting the aquifer properties. Application of this package in the MODFLOW round rectangular model results in improved model results, however deviations do continue to exist. In contract with the confined exercise (~\ref{sec:test1}) application of the radial scaled MODFLOW model under unconfined aquifer conditions  deviations from the analytical solution are still present. Modelled drawdowns show strong similarities with the uncorrected analytical solution. Moreover, relative to the analytical solution the absolute radial scaled MODFLOW model outcomes performs most accurately. Making the radial scaled (single row) MODFLOW model suitable for the unconfined aquifer conditions of this thesis.   
 
-\begin{figure}[H]
- \centering\includegraphics[width=0.8\linewidth]{Test_2_Results}
+\begin{figure}[h!]
+ \centering\includegraphics[width=1.0\linewidth]{NWT-Test_2_Results}
  \captionsetup{justification=centering}
- \caption{Results test 2}
- \label{fig:Test2_results}
+ \caption{Results test 2a}
+ \label{fig:Test2a_results}
+\end{figure} 
+
+\subsection{Constant head is 7 m}
+
+\begin{figure}[h!]
+ \centering\includegraphics[width=1.0\linewidth]{NWT-Test_2b(7m)_Results}
+ \captionsetup{justification=centering}
+ \caption{Results test 2b}
+ \label{fig:Test2b_results}
 \end{figure} 
 
 \clearpage\section{Test 3: Unsteady flow to a partially penetrating well in unconfined aquifer}
@@ -189,7 +199,7 @@ As a final exercise the different MODFLOW models are subjected to a more complic
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}
-\node [mybox] (box){\includegraphics[width=0.8\linewidth]{Schematic_test3}};  
+\node [mybox] (box){\includegraphics[width=0.6\linewidth]{Schematic_test3}};  
 \node[title, right=10pt] at (box.north west) {Schematic test 3};
 \end{tikzpicture}
 \captionsetup{justification=centering}
@@ -207,7 +217,7 @@ Performance of the radial scaled (single row) MODFLOW model is visualized by the
 \end{figure} 
 
 \begin{figure}[H]
- \centering\includegraphics[width=0.8\linewidth]{Test_3_Results_2m}
+ \centering\includegraphics[width=1.0\linewidth]{NWT-Test_3_Results_2m}
  \captionsetup{justification=centering}
  \caption{Results test 3: Head after 1 day of pumping at 2.0m (relative to aquifer bottom)}
  \label{fig:Test3.1_results}

@@ -1,0 +1,72 @@
+\chapter{Discussion}
+\label{chapter:discussion}
+In this section, the research content is reviewed. The aspects of moderate quality and potential shortcomings in the fulfilment of the thesis (e.g. fieldwork set-up, model definition, software application, etcetera) are uncovered. If relevant, recommendations for (additional) research improvements are given. 
+
+%\section{A farmers guide to ASR system improvement}
+\section{Farmer's guideline - ASR system implementation} 
+\label{sec:farmers_guide}
+
+\section{Fieldwork analysis} 
+\begin{itemize}
+\item{measurement}
+\begin{itemize}
+\item{In well}
+\item{Simplistic test set-up (rope tangle)}
+\item{Multiple locations (representative)}
+\end{itemize}
+\item{Data analysis}
+\begin{itemize}
+\item{Simplified theoretical models - general}
+\item{Simplified theoretical models - confined/unconfined }
+\item{Simplified theoretical models - initial conditions}
+\end{itemize}
+\item{$T$ \& $S$ bandwidth definition}
+\end{itemize}
+
+\section{ASR system - Improvements \& sensitivities} 
+\begin{itemize}
+\item{Model definition} 
+\begin{itemize}
+\item{Varying flood level and time-frame}
+\item{Homogeneous single layer unconfined aquifer}
+\item{Hlim}
+% why not just pumping at a higher discharge rate? vraagt mark. Maar dat kan niet vanwege: modflow droogvallende cellen om well screen die niet fijn weer zomaar actief worden. onwenselijk vanuit sustainability oogpunt. Onwenselijk vanuit pump placement diepte. onwenselijk van mogelijk onwenselijjke aerobe proccesses als het screen droog komt te liggen. 
+\item{ASR system infiltration bed}
+\item{MODFLOW \texttt{MNW2 CWC} combined with radial scaling}
+\end{itemize}
+\item{Well skin resistance}
+\item{The dimensionless ASR system recharge factor}
+\end{itemize}
+
+\section{ASR system - Financial magnitude} 
+\begin{itemize}
+\item{Crops of interest}
+\item{Irrigation efficiency}
+\item{Pump - type/efficiencies/working point}
+\item{Power required - head, generator and loss efficiencies}
+\item{Fuel - costs/(generator)consumption}
+\end{itemize}
+
+%\textbf{$T$ \& $S$ bandwidth definition}
+%The defined scope can not be interpreted as a generalization of the different locations. Not a single combination of the upper and lower parameter boundaries is the one-on-one representation of a specific location. The bandwidth predominantly acts as an input for scenario modelling in the subsequent parts of this research. Outcome of these scenarios are perhaps quantitatively incorrect, but can qualitatively be interpreted as indication for the impact of ASR-system improvements within northern Ghana. 
+%
+%\textbf{Discussion - Synthetic model definition} \\
+%The research base model results do not apply to a single research location (depicted in Figure \ref{fig:Overviewlocations}). The applied simplified model conditions serve research purposes. Assumptions made, are not by definition realistic. One can for example imagine the actual wet season inundation levels will fluctuate over time. And in practice, groundwater withdrawal needs day-specific tuning (not constant for 243 days) with respect to agricultural needs. Aspects advisable to take into account in further research.\\
+%
+%\textbf{Discussion - Synthetic model definition}
+%In general, $K_{skin}$ values are typically expected to be lower than the $K_{h}$ \citep{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}. To meet this requirement, the gravel-pack is interpreted as partially clogged. The research base model $K_{gp}$ is assumed to be 1/5 of the $K_{h}$ (soil scenario dependent). \\To get a deeper understanding of the exact values, further (fieldwork) research is advisable. \\
+%Limitation: $K_{skin}$ in research dependent on soil around it. Not the first intention. But could not be done differently, due to MODFLOW model defintion. Standard solver conditions 'failed to meet the solver convergence criteria' if CWC values were defined to high. This height was found to be dependent on the relation with the hydraulic conductivity of the specific soil (scenario dependent). Upto 40 times the soil hydraulic conductance possible. Therefore chosen for $K_{skin}$, as a fraction of $K_{h}$
+%
+%\textbf{Discussion - Synthetic model definition}
+%Note, The actual presence of the ASR system infiltration bed is unaccounted in this research. The potentially applicable bed resistance can cause deviations in the results (recharge, discharge and Recovery ratio) obtained. With regard to this topic, further (fieldwork) research is advisable. 
+%
+%\textbf{Discussion - Synthetic model definition - \texttt{MNW2} skin resistance} \\
+%Little is known about the exact order of skin resistances (well conductance). A topic that can fill an entire individual research. It is for example unknown how to interpret the \texttt{CWC} in relation to a radial scaled MODFLOW model. Moreover, research can also be performed by the inclusion of a laboratory or fieldwork set-up. When fieldwork is done, a combination with infiltration bed resistances is possible. \\
+%
+%\textbf{Discussion - Synthetic model definition - additional options in ASR-system research}\\
+%Simulation are done by a constant flood bound of 2 m for four months. It would be interesting to investigate the ASR-system behaviour under the conditions of temporal flooding (rain-based inundation). \\
+%
+%\textbf{Discussion - Synthetic model definition - sensitivity analysis}\\
+%More sensitivity on for example the set drawdown limitations. 
+%
+%\Textbf{Crops of interest - choice in types uberhaupt, type suitable for local temperatures, water utilization efficiency wel heel erg robuust, market and prices, verwerkingsprocess wel of niet}

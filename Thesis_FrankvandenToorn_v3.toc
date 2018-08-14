@@ -1,0 +1,84 @@
+\babel@toc {english}{}
+\contentsline {chapter}{List of Figures}{ix}{chapter*.5}
+\contentsline {chapter}{List of Tables}{xiii}{chapter*.6}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Aquifer test}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Research locations in northern Ghana}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Methods - Set-up \& analysis}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Measurement set-up}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Data analysis}{8}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Data processing}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Location: Bingo}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Location: Nungo}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Location: Nyong Nayili}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Location: Janga (1/2)}{12}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Location: Janga (2/2)}{13}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Location: Ziong (monitoring)}{14}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Results \& conclusions}{15}{section.2.4}
+\contentsline {chapter}{\numberline {3}ASR system - Improvements \& sensitivities}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Methods - ASR system simulation}{19}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Soil scenarios}{19}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}ASR system - Synthetic base model definition (reference)}{19}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}ASR system improvements}{22}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}ASR system sensitivities}{22}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Test criteria - sustainability}{22}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}ASR system base model performance}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Wet season}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Dry season}{24}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Recovery ratio $R_\%$}{25}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}ASR system improvements}{25}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Extension of daily pumping time}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Enlargement of borehole cross-sectional dimension}{27}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Reduction of well skin resistance}{27}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}ASR system sensitivity}{28}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Degradation of well depth by clogging}{28}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Shortening wet season inundation time-span}{29}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Reduction wet season inundation level}{30}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}The dimensionless ASR system recharge factor}{31}{section.3.5}
+\contentsline {section}{\numberline {3.6}Results \& Conclusions}{32}{section.3.6}
+\contentsline {chapter}{\numberline {4}ASR system - Business case}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Methods - From water volume to financial considerations}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Yield - crops of interest}{33}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Costs - water withdrawal}{35}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Financial yield}{36}{section.4.2}
+\contentsline {section}{\numberline {4.3}Pumping costs}{37}{section.4.3}
+\contentsline {section}{\numberline {4.4}Results \& conclusions}{38}{section.4.4}
+\contentsline {chapter}{\numberline {5}Discussion}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Farmer's guideline - ASR system implementation}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}Fieldwork analysis}{41}{section.5.2}
+\contentsline {section}{\numberline {5.3}ASR system - Improvements \& sensitivities}{41}{section.5.3}
+\contentsline {section}{\numberline {5.4}ASR system - Financial magnitude}{41}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusions \& Recommendations}{43}{chapter.6}
+\contentsline {chapter}{Bibliography}{45}{chapter*.51}
+\contentsline {chapter}{Appendices}{47}{appendix*.52}
+\contentsline {chapter}{\numberline {A}Original borehole log sheets}{49}{appendix.A}
+\contentsline {chapter}{\numberline {B}Aquifer test - Data results (fact sheets)}{55}{appendix.B}
+\contentsline {chapter}{\numberline {C}Aquifer test - Equipment}{63}{appendix.C}
+\contentsline {section}{\numberline {C.1}Pumping test}{63}{section.C.1}
+\contentsline {section}{\numberline {C.2}Water table monitoring}{64}{section.C.2}
+\contentsline {chapter}{\numberline {D}Aquifer test - Data analysis overview}{67}{appendix.D}
+\contentsline {section}{\numberline {D.1}Example Python scripts}{67}{section.D.1}
+\contentsline {section}{\numberline {D.2}Data analysis overview}{68}{section.D.2}
+\contentsline {subsection}{\numberline {D.2.1}Location: Bingo}{69}{subsection.D.2.1}
+\contentsline {subsection}{\numberline {D.2.2}Location: Nungo}{71}{subsection.D.2.2}
+\contentsline {subsection}{\numberline {D.2.3}Location: Nyong Nayili}{72}{subsection.D.2.3}
+\contentsline {subsection}{\numberline {D.2.4}Location: Janga (1/2)}{74}{subsection.D.2.4}
+\contentsline {subsection}{\numberline {D.2.5}Location: Janga (2/2)}{76}{subsection.D.2.5}
+\contentsline {subsection}{\numberline {D.2.6}Location: Ziong}{78}{subsection.D.2.6}
+\contentsline {chapter}{\numberline {E}MODFLOW - Model definition}{81}{appendix.E}
+\contentsline {section}{\numberline {E.1}Model design}{81}{section.E.1}
+\contentsline {subsection}{\numberline {E.1.1}MODFLOW-NWT}{81}{subsection.E.1.1}
+\contentsline {subsection}{\numberline {E.1.2}MODFLOW - \texttt {GHB}}{82}{subsection.E.1.2}
+\contentsline {subsection}{\numberline {E.1.3}MODFLOW - \texttt {MNW2}}{82}{subsection.E.1.3}
+\contentsline {section}{\numberline {E.2}Leakage factor $\lambda $}{83}{section.E.2}
+\contentsline {chapter}{\numberline {F}MODFLOW - Radial conversion}{85}{appendix.F}
+\contentsline {section}{\numberline {F.1}Test 1: Steady flow to a fully penetrating well in confined aquifer}{88}{section.F.1}
+\contentsline {section}{\numberline {F.2}Test 2: Steady flow to a fully penetrating well in unconfined aquifer}{90}{section.F.2}
+\contentsline {subsection}{\numberline {F.2.1}Constant head is 10 m}{91}{subsection.F.2.1}
+\contentsline {subsection}{\numberline {F.2.2}Constant head is 7 m}{91}{subsection.F.2.2}
+\contentsline {section}{\numberline {F.3}Test 3: Unsteady flow to a partially penetrating well in unconfined aquifer}{93}{section.F.3}
+\contentsline {chapter}{\numberline {G}MODFLOW - Additional model results}{95}{appendix.G}
+\contentsline {section}{\numberline {G.1}ASR system base model performance}{95}{section.G.1}
+\contentsline {section}{\numberline {G.2}ASR system sensitivity}{96}{section.G.2}
+\contentsline {chapter}{\numberline {H}Product specifications - Pedrollo 4" submersible pump}{99}{appendix.H}
+\contentsfinish 

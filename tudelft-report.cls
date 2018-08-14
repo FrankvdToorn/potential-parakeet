@@ -58,8 +58,8 @@
     \fi
 \fi
 \RequirePackage{metalogo}
-%\RequirePackage[numbers,sort&compress]{natbib}
-\RequirePackage[authoryear, round, semicolon, sort&compress]{natbib}
+%\RequirePackage[numbers,sort&compress]{natbib}    % zelf uit gezet
+\RequirePackage[authoryear, round, semicolon, sort&compress]{natbib} % zelf aangezet
 \RequirePackage{tikz}
 \RequirePackage[noindentafter]{titlesec}
 \RequirePackage{titletoc}

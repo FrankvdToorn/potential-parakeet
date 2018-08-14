@@ -1,5 +1,87 @@
-\chapter{Extense report - MODFLOW model definition}
+\chapter{MODFLOW - Model definition}
 \label{chapter:Extense_Modflow_model}
+
+\section{Model design}
+\label{section:MODFLOW_const}
+For the ASR-system simulation MODFLOW is used. A finite difference model, written by US Geological Survey (USGS). It is stated to be the worldwide most convenient (open source) computer program for the simulation of groundwater flow. MODFLOW has a modular structure. A variety of aquifer features can be simulated by the introduction of (free available) packages. In this research, input files (needed by MODFLOW) are created by the use of Python and the \texttt{FloPy} package (\citep{Niswonger2011,HarbaughArlen2005}). \\
+
+Unmodified versions of MODFLOW uses Cartesian geometry. Simulations are standard performed in a (single or multi layer) rectangular grid model. These models can simulate the three-dimensional ASR-system performance accurately. However, it requires disadvantageous large computational power. In this particular case the single well simulation is approached axially symmetric. As prescribed by \citet{Langevin2008}, the rectangular model structure is radially scaled by the adjustment of several input parameter. Results are advantageous on model precision and run times. A detailed description of this radial scaled MODFLOW model can be found in Appendix \ref{MODFLOW_radial}. \\
+
+Due to the applied MODFLOW radial scaling the defined grid consist of a single row (1 m width) and multiple columns. The well is located in the first cell (column 0, row 0). Column width increases (grouped) stepwise, based on the (radial) distance between the specific column and the well. By the use of the cell sizes 0.0635 m (40x), 0.1 m (25x), 0.5 m (20x), 1.0 m (25x), 2.0 m (30x) and 5.0 m (10x) a total (radial) length of 150 m is simulated. An extent assumed to be sufficient for the purposes of this research (Appendix \ref{section:Leakage_factor}). The vertical (third) dimension is added to the model by a total of 50 layers (thickness of 1.0 m each). \\
+
+Model timespan (one year) is devised into an abundance of logarithmic time frames. Higher temporal resolutions is added to the moments at which fluctuation in head are expected. The design of four months infiltration contains a single logarithmic time frame of 200 steps. Every single day in dry season (243 days) contains a 4 hour logarithmic time frame for pumping (8 steps) and a subsequent 20 hour logarithmic time frame for recovery (10 steps). This puts the year-round total number of time steps on 4574. 
+
+\subsection{MODFLOW-NWT} 
+Due to initial conditions and expected strong temporal variations in GWT cells may fall dry and become wet again over time. Model simulation is therefore performed through the use of MODFLOW-NWT: The Newton-Raphson formulation for the (more convenient) MODFLOW-2005 program. As stated by \citet{Niswonger2011}, MODFLOW-NWT is intended for solving problems involving drying and re-wetting non-linearities of the unconfined groundwater-flow equation. MODFLOW-NWT requirs a combined use with the \texttt{Upstream Weighting (UPW)} package for calculation conductances between cells (instead of the \texttt{BCF}, \texttt{LPF} or \texttt{HUF} package applicable with MODFLOW-2005). The \texttt{UPW} package keeps dry cells active, while water outflow of the cell is not allowed. Moreover, if applicable inflow to a dry cell automatically flows further down to the adjacent (non-dry) cell in the layer below \citep{Niswonger2011}. In correspondence with the use of MODFLOW-NWT the (own) NWT solver is used for model simulation (instead of the convenient \texttt{PCG} solver). 
+
+\subsection{MODFLOW - \texttt{GHB}}
+Wet season infiltration is included by the use of the \texttt{General Head Boundary} (\texttt{GHB}) package. For as long as the wet season (stress periods), \texttt{GHB} cells are specified through \texttt{stress period data}. \texttt{General Head Boundaries} are added to the well cells (row 0, column 0) in the predefined layers of penetration (layer 20-46). The \texttt{GHB stress period data} requires an additional definition of \texttt{stage} and \texttt{cond} (conductance) \citep{Harbaugh2000}. The stage equals the constant flood inundation level (h$^*$ = 2 m). For the purposes of this research conductances are aligned with the \texttt{CWC} (Cell-to-Well hydraulic conductance). More information on the \texttt{CWC} can be found in Section \ref{subsec:MODFLOW_MNW2}. 
+
+\subsection{MODFLOW - \texttt{MNW2}}
+\label{subsec:MODFLOW_MNW2}
+The ASR-system of interest contains a well which is partially penetrating the aquifer. In simulation, the aquifer consists of multiple model layers. A set-up causing the convenient \texttt{Well} package to be insufficient. For a solid simulation the more extended \texttt{Multi-Node-Well2} (\texttt{MNW2}) package is used. \texttt{MNW2} houses several additional well options (e.g. bounded drawdown, addition of well skin resistances and pump related adjustments in discharge). Thence, definition of an abundant list of parameters is required (within the \texttt{node data} and the \texttt{stress period data})\citep{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}.  \\
+
+Many parameters are by default correct, some however need specification. The well penetration interval (screen) is recorded by the definition of \texttt{ztop} and \texttt{zbotm}. \texttt{MNW2} assigns the well screen to model nodes (well cells in the corresponding layers). In-well GWT preferable does not drop below the elevation of -20 m. \texttt{Hlim} definition guarantees this desire. The flag of \texttt{qlimit} is 1 activates the definition of \texttt{Hlim}. Moments (stress-periods) of pump operation are set by \texttt{ITMP} is 1, all other moments (stress-periods) \texttt{ITMP} is set 0. Furthermore, \texttt{MNW2} requires the input of a desired discharge (\texttt{qdes} and specification of Cell-to-Well hydraulic conductance (\texttt{CWC}), topics highlighted below. \\
+
+\textbf{Desired discharge (\texttt{qdes})} \\
+Based on a predefined desired discharge the MNW2 determines a (model) layer dependent discharge iteratively. As long as the head bound (\texttt{Hlim}) is not restrictive, summed layer discharges equal (approximately) the desired discharge. The predefined desired discharges are based on the predefined criteria of sustainable system use. The dry season (total) discharge volume should not exceed the wet season (total) recharge volume. The desired discharge (\texttt{qdes}) is predefined in such a way, this condition is always met. 
+%
+%  ratesDesired discharges are based on the analytical Thiem method \citep{Kruseman2000}; confined steady state flow equation \ref{eq:Q_thiem}: \\
+%
+%\begin{equation}
+% Q_{Thiem} = \frac{2\pi KD (s_{well}- s_{2})}{ln(r_{2}/r_{well})}
+%\label{eq:Q_thiem}
+%\end{equation}  
+%
+%where $Q_{Thiem}$ (m$^3$/d) is the confined steady state well discharge, $K$ (m/d) is the aquifer hydraulic conductivity, D (m) is aquifer height, $s_{well}$ (m) the in-well drawdown, $s_{2}$ (m) is the drawdown at a known second location, $r_{2}$ (m) is the distance between the second location and the well and $r_{well}$ (m) equals the well radius. \\
+%
+%In this particular case thickness $D$ is interpreted as being the well screen height. And the in-well drawdown is set in correspondence with the desired limit in GWT; $s_{well}$ equals 14 m. Due to different horizontal hydraulic conductivities $K$, obtained desired discharges are scenario dependent. Note, upscaling by borehole cleaning (Section \ref{subsec:Up_clean}) will result in a variation of desired discharges due to the change in screen height ($D$). \\
+
+\texttt{FloPy} is used for reading MODFLOW binary output files. In other words, the actual simulated recharges and discharges are obtained by reading the \texttt{binaryfile.CellBudgetFile}. \\
+
+\textbf{MODFLOW standard - Cell-to-Well hydraulic conductance (\texttt{CWC})} \\
+Due to \texttt{MNW2} application, the occurrence of a difference between the head in the well and the head in the model (well)cell is inevitable. Multiple model elements contribute to the head difference. Total head difference is dependent on the expression of Cell-to-Well hydraulic conductance (\texttt{CWC}), depicted in Equation \ref{eq:CWC_n} \citep{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}. 
+
+\begin{equation}
+ CWC_n = [A + B + CQ_{n}^{(P-1)}]^{-1}
+\label{eq:CWC_n}
+\end{equation}  
+
+Where $CWC_n$ (m$^2$/d is the n$^th$ Cell-to-Well hydraulic conductance, A is the linear aquifer-loss coefficient resulting from the well having a smaller radius than the horizontal dimensions of the cell in which it is located, B is the linear well-loss coefficient accounting for head losses that occur adjacent to and within the borehole and well screen (skin effects) and $CQ_{n}^{(P)}$ accounts for non-linear head losses due to turbulent flow near the well \citep{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}. \\
+
+\begin{equation}
+ A = \frac{ln(r_{o}/r_{w})}{2\pi b \sqrt{K_{x}K_{y}}}
+\label{eq:A}
+\end{equation}
+
+\begin{equation}
+ r_o = 0.14 \sqrt{\Delta x^2 + \Delta y^2}
+\label{eq:r_o}
+\end{equation}
+
+\begin{equation}
+ B = \frac{SKIN}{2\pi b \sqrt{K_{x}K_{y}}}
+\label{eq:B}
+\end{equation}   
+
+\begin{equation}
+ SKIN = {(\frac{bK_{h}}{b_{w}K_{SKIN}}-1)} ln(\frac{r_{skin}}{r_{w}})
+\label{eq:SKIN}
+\end{equation}   
+
+Where $r_{o}$ (m) is the effective external radius of a rectangular finite-difference cell for isotropic porous media, $r_{w}$ (m) is the well radius, $r_{skin}$ (m) is the well radius plus the thickness of improved soil around the well, b (m) is the saturated thickness of the cell(layer), $b_{w}$ (m) is the saturated (active) length of the borehole in the cell(layer) (in the purposes of this research equal to b (1m)), $K_{h}$ (m/d) is the horizontal (non-radial scaled) hydraulic conductivity (equals $K_{x}$ and $K_{y}$ due to the assumption of horizontal anisotropy), $\Delta x$ (m) is the grid spacing in the x-(column-)direction and $\Delta y$ (m) is the grid spacing in the y-(row-)direction \citep{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}. \\
+
+As stated, the aquifer-loss coefficient (A) accounts for the difference in dimensions between the well (cross-section) and the (well)cell. Perfectly understandable in the case of an unmodified (Cartesian geometry) rectangular grid MODFLOW model. However, simulation is performed in a radial scaled model, according to the principles as stated by \citet{Langevin2008}. Well cell width perfectly aligns the radius of the well. It is therefore no longer known how to interpret the A term. The same applied for the implementation of the $CQ_{n}^{(P)}$ term. Further research should be done on the implementation of the \texttt{MNW2} Cell-to-Well hydraulic conductance in combination with a radial scaled MODFLOW model. In this research the \texttt{CWC} values are specified manually. The applied conductances are calculated by the Equations \ref{eq:cond} - \ref{eq:K_skin} (Section \ref{base_model_def}).  \\
+%
+%What left, is a \texttt{CWC} dependent on the well-loss coefficient B. In the SKIN term (part of coefficient B) the parameters $r_{skin}$ and $K_{skin}$ need additional information. $r_{skin}$, equals $r_{w}$ plus a unknown radius of improved soil around the well. As stated by \citep{Bot2016}, for proper installation a minimum length of 0,125 m (measured from well radius) is required. This length is therefore implemented in research. $K_{skin}$ accounts for both; a higher resistance due to the well screen tiny perforations and at the same time a reduction in resistance due to the improved soil around the well. Further research should be applied to get deeper understanding of the exact parameter magnitude. $K_{skin}$ is typically expected to be lower than the $K_{h}$ \citep{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}. Dependent on the scenarios three different values are assumed in research, as depicted in Figure \ref{fig:Schematic_base_model}. Resulting \texttt{CWC} values used in the different base models are; 0.031 m$^2$/d (sc1\&2), 0.358 m$^2$/d (sc3) and 0.512 m$^2$/d (sc4\&5). Note, upscaling the borehole cross-sectional dimension (Section \ref{Subsec:Up_diam}) will result in variation of \texttt{CWC} values due to the change in $r_{w}$ and thus $r_{skin}$. \\
+
+%
+%Due to the tiny perforations, the well screen typically negatively influences the permeability of the well skin. At the contrary, the inclusion of the gravel-pack around the well limits this impact. Nonetheless, the overall well skin hydraulic conductivity is typically lower than the original aquifer hydraulic conductivity \ref{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009, Houben2015}.
+%
+%
+% to be  and a reduction in resistance due to construction of a gravel-pack around the well (all . The hydraulic conductance is typically expected to be lower  
+%Relative to the original aquifer hydraulic conductivity ($K_{aq}$)),  
+
 
 \section{Leakage factor $\lambda$}
 \label{section:Leakage_factor}
