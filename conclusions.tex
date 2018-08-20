@@ -1,13 +1,147 @@
 \chapter{Conclusions \& Recommendations}
 \label{chapter:conclusions}
+To conclude, this chapter formulates short answers to the individual research questions. The partial explanations are followed up by an answer to the main research question. Finally, multiple recommendations for directions of additional research will be discussed. This report aims to answer the following research question: \\
 
-The conclusion presents the final results and recommendations of this research. An answer will be generated on the main research question:  \\
- 
-\textbf{How can improvements of Aquifer Storage and Recovery (ASR) systems be more beneficial for the availability and sustainable use of groundwater in northern Ghana small-scale agriculture?} \\
+%the overture to
+%
+%The conclusion presents the final results and recommendations of this research. An answer will be generated on the main research question:  \\
+%
+%This section contains the conclusions that can be drawn from the site visits and the analysis of pumping test data. The final part of this section describes how this data was used to derive parameters for soil scenarios to study potential methods for improvements of ASR systems in northern Ghana.  \\
+% 
+\textbf{How can Aquifer Storage and Recovery (ASR) systems be improved to increase the availability and sustainable use of groundwater in northern Ghana small-scale agriculture?} \\
+%\textbf{How can Aquifer Storage and Recovery (ASR) systems be adapted sustainably to improve its application in northern Ghana small-scale agriculture?} \\
+%\textbf{How can Aquifer Storage and Recovery (ASR) systems be improved to be more benificial for small-scale agriculture in northern Ghana?} \\ Is dit niks??
 
-In correspondence with the thesis core, the answer will consist of three parts. The answer elaborates on the sub conclusion, to be found in the Sections \ref{section:fieldwork_conclusions}, \ref{section:Upscaling_conclusions} and  \ref{section:Yields_conclusions}. \\
+This is successively done by answering the questions: 
+\smallskip \\
+\textit{Which range of values for transmissivity ($T$) and 
+storativity ($S$) can be obtained from aquifer tests applied at multiple study sites in northern Ghana?}
+\smallskip \\
+The research is provided with local geohydrological data by performing in-well aquifer tests at northern Ghana study sites in: Bingo, Nungo, Nyong Nayili, Janga and Ziong. In the process of groundwater drawdown data analysis TTim offers additional model options (e.g. borehole storage, well skin resistance, multiple layers), by which Theis's method is outperformed in this research. Despite the differences in absolute parameter size, this research demonstrates that the \texttt{Fmin-RMSE} and \texttt{Calibrate} (TTim built-in) optimization functions are both applicable for the determination of suitable $T$ and $S$ values. Based on the results of the Root-Mean-Square-Error objective function, a single layer aquifer (most simplistic model) is in this research adopted as representative for local nature. The transmissivity range of this single layer aquifer is determined by the values found in data analysis and some factor of safety. Due to the lack of groundwater measurements in the vicinity of the pumping wells, there is some uncertainty in the derived subsurface parameters. As a consequence, the definition of the storativity values is based on more commonly found values in literature. As an answer to this research question, plausible values for transmissivity and storativity are suggested to be present in the range of respectively 1 - 100 (m$^2$/d) and 1e-3 - 1e-2 (-). \\
 
-Work In Progress. Final conclusion will follow soon. \\
+%
+%
+%In the research process The results are based on the analysis of data obtained by in-well aquifer tests at the northern Ghana locations: Bingo, Nungo, Nyong Nayili, Janga and Ziong.
+%
+%% herewith
+%%data analysis of the aquifer tests resulted (with some factor of safety) transmissivity and storativity values in the 
+%
+%
+%uitleggen wat ik gedaan heb.. aquifer tests at five locations \\
+%\textbf{Applicability of methods \& models}
+%\begin{itemize}
+%\item{Performance (analytical) methods; Theis \& TTim} \\
+%Compared to the simplest pumping test interpretation (Theis's method), TTim offers more model options (borehole storage, well skin resistance, multiple layers) in drawdown data analysis \citep{Mishra2013,Bakker2013}. In this research TTim outperforms Theis's method. However, TTim also encounters limitations, e.g. when there is a variable inflow at the start of a pumping test or when an additional sudden drop in drawdown occurs. 
+%
+%\item{Performance of optimization functions; \texttt{Fmin} \& \texttt{Calibrate}} \\
+%The obtained geohyrological parameters represent local nature to a certain extend. This is confirmed by the Root-Mean-Square-Error values (objective function). Application of the two optimization functions generates outcomes. The results of different optimization functions can lead to differences in parameter size, while goodness of the fit statistics (RMSE) are comparable. However, the resulting parameters are generally similar. Therefore, it can be concluded that both optimization functions (\texttt{Fmin} and \texttt{Calibrate}) are applicable for the determination of suitable $T$ and $S$ values. 
+%
+%\item{Performance of proposed subsurface models}  \\
+%Three simplified system models were used: a single layer model, a double layer model and a model with two layers and partial penetration of the well (Figure \ref{fig:Schematic_1lay_analysis} - \ref{fig:Schematic_3lay_analysis}). Based on the Root-Mean-Square-Error objective function, none of these systems performs consistently better or worse than any of the others. Therefore, the most simple (the single layer) model is applied in the rest of this research.
+%\end{itemize}
+%
+%\textbf{$T$ \& $S$ values} \\
+%Drawdown measurements are taken in the extraction well. This set-up deviates from the desired common standard \citep{Kruseman2000}. It should be kept in mind that the quality of the data can be questioned. At each location different combinations of parameters yielded similar drawdown curves. This is likely a consequence of only having measurements inside the extraction well. The different models that were applied in the analysis of the data did not yield significantly different results. It is clear that due to the lack of groundwater measurements in the vicinity of the pumping wells, there is some uncertainty in the derived subsurface parameters. \\
+%
+%The results from Bingo are used in further analysis. A bandwidth is defined to deal with the uncertainties mentioned in Section \ref{section:TS}. Upper and lower limits for $T$ and $S$ values are derived. The bandwidth is presented in Figure \ref{fig:Parameter_bandwidth}. Transmissivity limits are based on the obtained values in Section \ref{section:TS} and some factor of safety. For the definition of the storativity values a different approach was used. The  parameters limits are based on more commonly found values. The chosen lower limit storativity ($S_{lower}$) corresponds with the situation of a confined aquifer, while the upper limit ($S_{upper}$) related more to the specific yield of a phreatic storage \citep{Strack1989,Fitts2012}. \\
+
+%\textit{How and to what extent can modifications of an ASR system affect the water supply to northern Ghana smallholder farmers, while sustainability is maintained?}
+%Is dit niet een goed???
+\textit{How and to what extent can an ASR system be affected in its water supply to northern Ghana smallholder farmers, while sustainability is maintained?} 
+%\textit{How and to what extent can improvements of an ASR system increase the water supply to northern Ghana smallholder farmers, while sustainability is maintained?}
+\smallskip \\
+To answer this research question, a synthetic base model is presented which represents ASR system performance potentially applicable on northern Ghana conditions. The year-round simulations shows that the volumes obtained in eight months of daily (four hour) dry season pump operation, with a discharge bounded by a maximum drawdown ($\Delta$h of 14 m), do not exceed the gravity based recharge volumes caused by four months of constant inundation ($\Delta h$ is 8 m). Under the applied conditions of subsurface composition and ASR system use, sustainability is maintained. Higher total extraction volumes can be acquired by an extension of the dry season daily pumping time. However, in this way the recharge remains unaffected and an unsustainable system use lurks. To increase both discharge ánd recharge volumes (and Recovery ratios), the ASR system can be improved by amongst others the enlargement of the borehole cross-sectional dimension and the reduction of the well skin resistance. Within the modifications scope ($r_w$ = 0.0635-0.3175 m and $k_{gp}$ = 0.2-1.8*$K_h$ m/d), the obtained base model volumes are more than doubled. Due to the non-linear relation between the improvement 'size' and its volume performance, significant water profit can be obtained by relative small modifications. The recharge and discharge rates are moreover affected by the ASR systems active screen length (natural accumulation of sediment). In the scope (10 - 30 m) of this modification type a positive slightly off-linear relation is observed between the screen length and obtained volumes. 
+Furthermore, the ASR systems sensitivity to the natural conditions of its surroundings is taken into account. The volumes recharged are (for the the research time-span) by approximation linear related (positively) to the duration of the constant level flooding (range 1 - 4 months) and the depth of the inundation level ($\Delta$h range 2 - 8 m). The research demonstrates that recharge is normative in the sustainable performance of an ASR system. \\
+
+%A reduction (natural accumulation of sediment)  in the systems active screen length (range 30 - 10 m) has an increasingly (slightly off-linear) negative impact on the inflow ánd outflow of an ASR system. \\ 
+
+%\textbf{Performance of a synthetic ASR system in northern Ghana}
+%\begin{itemize}
+%\item{Recharge \& discharge volumes } \\
+%The total inflow and outflow volumes are both affected by the magnitude of the transmissivity value. An increase of the transmissivity value, in the range of 1 - 100 (m$^2$/d), results in acquired volumes that are significantly higher. The presence of a well skin resistance (transmissivity dependent) may play a role in this context. The bandwidth variance in storativity values, 1e-3 - 1e-2 (-), appears to have only limited influence on the obtained volumes. The shift in storativity values applied (within bandwidth range), sorts minimal effects on the total inflow volume. While, the discharge volumes are somewhat positively affected by an increased storativity. The (small) storativity bandwidth-scope is insufficient to draw further conclusions. 
+%\item{Sustainable use} \\
+%Under the applied conditions of subsurface composition and ASR system use, recovery ratios (for all soil scenarios) stay within the limits of sustainability. In eight months of daily (4 hours) pump operation, with a discharge bounded by a maximum drawdown ($\Delta$h of 14 m), it is not possible to fully recover the water volumes recharged due to four months of constant inundation ($\Delta h$ is 8 m).
+%\end{itemize}
+%
+%\textbf{ASR system improvements}
+%\begin{itemize}
+%\item{Preservation of sustainable use} \\
+%Higher total discharge volumes can be obtained by an extension of the dry season daily pumping time. By considering the predefined conditions (e.g. wet season constant 2 m flooding, dry season daily pumping operation of 4 hour), it is advisable pumping operation should not exceed a 6 till 7 hour daily duration (8 months). Independently from the soil scenario, a sustainable system use can in this way potentially be retained. 
+%\item{Increase in recharge \& discharge volumes}\\
+%In terms of volumes (and Recovery ratios), an ASR system can be improved by both the enlargement of the borehole cross-sectional dimension and the reduction of the well skin resistance. Within the research scope ($r_w$ = 0.0635-0.3175 m and $k_{gp}$ = 0.2-1.8*$K_h$), the obtained base model volumes are more than doubled by these types of improvement. A non-linear relation exists between the 'size' of the system improvement and the magnitude of obtained volumes. A significant water profit can be obtained by relative small base model modifications.
+%\end{itemize}
+%
+%\textbf{ASR system sensitivity to nature}
+%\begin{itemize}
+%\item{Recharge volumes}\\
+%The relation between the partially penetrating well screen length (research scope: 10 - 30 m) and inflow and outflow is slightly off from linear. When the active screen length reduces (more accumulation of sediment), the essence of cleaning becomes not only in absolute terms but also relatively more important. Within the research time-span, the system recharge volumes are by approximation linear related (positively) to the duration of the constant level flooding (range 1 - 4 months) and the depth of the inundation level. In the latter case, it is more precisely the difference between the flood level and (initial) groundwater table (hydraulic gradient) that is normative ($\Delta$h range 2 - 8 m). 
+%\end{itemize}
 
 
-%kom ook terug op hoeveel van die storage tanks er in de verschillende scenarios gevuld kunnen worden!
+%\textit{Is a northern Ghana ASR system financially feasible in terms of operation?} \\
+%\textit{With what levels of financial yield and operational costs can a northern Ghana synthetic ASR system potentially be associated?} \\
+%\textit{How are the, by the (improved) synthetic ASR systems, increased discharge volumes reflected in levels of financial yield and pumping costs?}
+\textit{With what levels in financial yield and pumping costs can a northern Ghana synthetic ASR system potentially be associated?}
+%\textit{With what financial yield levels can a northern Ghana synthetic ASR system potentially be associated?}
+\smallskip \\
+To deal with this question, the research dry season simulation is subdivided into successively a tomato and a groundnut cropping season. While water (withdrawn by ASR system) is approximately evenly distributed, the tomato revenues clearly exceed the financial yield of groundnut (15 times higher not unthinkable). The ASR system financial yield is strongly dependent on the cultivated crop type (choice). And on its own, the crop-specific revenues are strongly dependent on aspects as crop quality, shelf life and market conditions. The research lacks access to this uncertain financial (fluctuating) data. No distinctive conclusions can be drawn upon the revenues. The yields are weighed against the ASR system pumping costs. The systems operational costs are not only dependent on the absolute water quantities, also the withdrawal efficiencies are normative. A withdrawal costs comparison between the maximum (58\%) and the discharge dependent Pedrollo 4" submersible pump efficiencies learns, it is not desirable to apply the specific pump under all conditions (in the scope of research). The selection of a pump that is tuned to local possibilities in groundwater discharge (dependent on nature and system composition) can be beneficial for the operational costs of an ASR system. \\
+
+%
+%The selection of a pump (curve) that is tuned to the local possibilities in groundwater discharge (dependent on nature and system composition) can make the difference in the financial feasibility of an operational ASR system. \\
+
+
+%cropAlthough significant differences are exposed, the crop-specific revenues remain highly uncertain. The ASR systems financial feasibility is strongly dependent on aspect as crop quality, shelf life and market-prices.
+%
+%Moreover the crop-specific revenues are uncertain. This research exposes the wide divergence in potential ASR system financial yield by the comparing tomato and groundnut revenues. 
+
+%\begin{itemize}
+%\item{Yield increase} \\
+%By the implementation of the explored ASR system improvements, increased discharge volumes are acquired and higher financial (and agricultural) yield can be expected. A crop-specific yield comparison (Tomato versus Groundnut) reveals, the financial yield is potentially more dominantly affected by crop cultivation choice rather than the implementation of one of the investigated system improvements. Nonetheless, the crop-specific market price remains decisive in the ASR system financial feasibility.  
+%
+%\item{Operational cost reduction} \\
+%The ASR system operational costs are influenced by the withdrawal efficiencies. For an efficient use of the ASR system, the applied pump (pumping curve) should be specifically tuned to the local possibilities in groundwater discharge rates. The natural geohydrological conditions and the system composition play a role in this process. The selection of the 'right' pump can make the difference in the financial feasibility of an ASR system. 
+%\end{itemize}
+
+The results in this report show that it is indeed possible to sustainably increase the recharge and discharge water quantities (and Recovery ratios) by ASR system modifications. The overall performance of an existing ASR system can be improved by the reduction of the well skin resistance (skin cleaning). For the optimal utilization of the present screen length, 'pulse drill' maintenance should at all time prevent accumulation of sediment in the well (borehole cleaning). New ASR systems can perform at higher levels by an enlargement of the borehole cross-sectional dimension. The construction of a proper gravel-pack around the well contributes. Despite the imposed options in system modifications, the geographic position remains of utmost importance for system performance. The ASR system make use of the local surroundings and is therefore dependent on the (geohydrological) conditions present. By the inclusion of soil scenarios, research demonstrates that the ASR system thrives significantly better by the attendance of higher (within research scope) transmissivity ($T$) values. Due to a lack in bandwidth-space, the research storitivity ($S$) scope is insufficient to draw further conclusions upon. Furthermore, the research puts the (improved) ASR systems performance in financial perspective. By solely looking at the operational costs, the research does not confirm or deny that the ASR system is financially (in)feasible. However, the systems revenues are potentially more dominantly affected by choice in crop cultivation rather than by the implementation of what type of system improvements suggested in this research whatsoever. Still, the system modifications are plausibly beneficial. The implementation of the research proposed  improvements can potentially make the difference in the feasibility of an ASR system in northern Ghana.  \\
+
+
+%- nieuwe systemen: zorg dat je een juiste locatie vind. aanbrengen van grind-pack bepalend voor werking. en diameter vergroting kan toereikend zijn. stem deze onderdelen wel af op de aanwezige pomp capactiet. om onnodig lage pomprendamenten de kop in te drukken.  
+%
+%Zorg dat er nog zaken overblijven die hier benoemd kunnen worden. zoals: system altijd afhankelijk van omgeving. daar valt na installatie niets meer aan te veranderen. 
+%bestaand systeem. zet in op cleaning. en gebruik juiste pomp.
+%nieuw systeem: vind juiste locatie, zorg voor juiste installatie (grind-pack length and keep clean) pas diameter size en diepte af op surroundings, wat de boer wilt, wat de pomp (als die al aanwezig is) vraagt, en natuurlijk het financiele plaatje drilling bigger diameter. \\ 
+%
+%Zeg ook dat cleaning (screen) en well diameter vergroting benificial zijn voor vergroten volume. potentieel 2, 3 maal de in en outflow mogelijk van systemen die huiidig aanwezig zijn. zeg dat de pompkosten laat kunnen blijven bij juiste gebruik, en dat dit afhnakelijk van de crop verkoop echt bepalend kan zijn. Maar dat de overal opbrengsten altijd bepaald zullen blijven worden door de croptype en markt. deze laatste elementen zijn veel dominanter. Juist inzicht in crop crop choice misschien nog wel veel belangrijker dan enigsinds meer volume. Desondanks zullen de imprvements altijd meer volume mogelijk maken. Dit kan mogelijk dus wel net het verschil gaan maken in feasability of niet. \\
+
+
+Future research should mainly be directed at the determination of different types of ASR system resistances. Groundwater measurements in the vicinity of the well can not only provide clarification in the (somewhat uncertain) subsurface parameters ($T$ and $S$), the measurements can also contribute to a better understanding of the (uncertain) well skin resistances. Besides, the resistances of the ASR system infiltration bed are in this research ignored. Information that can be gathered by subjecting the infiltration beds to tension-infiltrometer tests. Since the infiltration bed permeabilities are decisive in the systems recharge rates. And the recharge rates are normative in the systems sustainable use. It is of anxious interest to gain knowledge on the ASR system infiltration bed resistances. \\
+
+%Future research is needed to .. \\
+
+%\textbf{Maintenance of ASR systems}
+%\begin{itemize}
+%\item{ASR-system cleaning} \\
+%One year after construction (2016) the penetration depth of all five boreholes has decreased (significantly) due to the deposition of sand at the bottom of the well. The impact differs per location, but at each location a minimal depth decrease of 6 m is observed. The most striking example is the borehole at location Nungo, where a complete clogging has occurred (over 40 m decrease in depth). Measures should be taken to prevent the occurrence of clogging. It is recommended to seal of each borehole with a plastic/concrete lid. The tube penetrations above the infiltration bed should be sealed off permanently to avoid inflow of undesired sand and clay. In addition, annual maintenance of the borehole and infiltration bed is desirable.
+%         
+%\item{Additional research} \\
+%The results obtained through the analysis of the pumping tests seem to yield plausible estimates of subsurface characteristics. However, the models are not able to closely match the observations in all cases. Additional research could be done to expand the models to include processes that were left out in this analysis, e.g. inflow from the infiltration bed and irregularities (sudden additional decrease) in the drawdown time-series. Methods to deal with missing data (gaps in time series) could also be improved upon.
+%%
+%%Obtained pumping test drawdown data is potentially plausible. Nevertheless, uncertainty in the derivation of parameters and the selection of a (simplified) model consists. As stated by \citet{Kruseman2000}, additional fieldwork does not necessarily solve these uncertainties. No new comparable pumping tests at the same borehole locations are needed at short term. Gaining knowledge on the interpretation of data can possibly offer solutions. Complementary research on how to deal with gabs in pumping test data and/or irregularities in drawdown time-series is advisable. Moreover, future research can be pointed at the impact of (time-dependent) inflow of water during pumping test application. 
+%
+%\item{Recommendations for future pumping tests} \\
+%Pumping tests should be performed with at least one (preferably more) observation well at a certain distance from the well \citep{Kruseman2000}. These tests potentially give insight in well skin behaviour (degree of resistance) and increase the amount of data from which subsurface parameters can be derived. The installation of one or more divers is recommended if complete ASR system understanding is required. This can provide more insight into how these system function throughout the year. \\
+%
+%MBT H3: vooral further research on andere vormen van sensitivity. flucturerende inflow, screen weerstand. en ook onderzoek doen naar de weerstanden in het infiltratiebed. nu volledig buiten beschouwing gelaten. hier kon geen onderzoek naar gedaan worden wegens een gebrek aan data. (zie tije uitleg deelvraag 3 conc). \\
+%
+%\item{Additional research} \\
+%The business case contains strong simplifications, uncertainties and additional components (CAPEX, OPEX) can be added. It is unknown to what extent ASR system elements are eligible for funds. For an more detailed financial feasibility of an ASR system implementation in northern Ghana, further research is advisable. \\
+%
+%
+%- Verder is het duurzaam gebruik van het systeem zeer afhankelijk van de inflow. oftwel van de duur en hoogte van hydraulic gradient. (en dan moet de inflow ook nog mogelijk zijn. infilt bed goed. maar omdat daar lacks data, dus nu niet meegenomen. inflow weerstand gelijkgehouden aan outflow weerstand.  
+%-ook is vanuit sustainability oogpunt harder pompen buiten beschouwing gelaten. Zout te grote drawdown veroorzaken waardoor perforaties bloot komen te liggen (nadelige aerobe processen) en aners zou de pomp ook onrealistisch diep moeten worden gehangen. 
+%
+%
+%
+%kijk voor verdere aanbevelingen ook nog even goed naar de discussie elementen. 
+%
+%\end{itemize}

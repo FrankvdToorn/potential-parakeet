@@ -1,72 +1,125 @@
 \chapter{Discussion}
 \label{chapter:discussion}
-In this section, the research content is reviewed. The aspects of moderate quality and potential shortcomings in the fulfilment of the thesis (e.g. fieldwork set-up, model definition, software application, etcetera) are uncovered. If relevant, recommendations for (additional) research improvements are given. 
+In this section, the research content is reviewed. A hands-on description of some important report parts (advise) is included to make the content more interpretable for northern Ghana farmers. Subsequently, the research aspects of moderate quality and potential shortcomings (e.g. fieldwork set-up, model definition, software application, etcetera) are for each part of the thesis uncovered. If relevant, recommendations for (additional) research improvements are given. 
 
 %\section{A farmers guide to ASR system improvement}
-\section{Farmer's guideline - ASR system implementation} 
+%\section{Farmer's guideline - ASR system implementation} 
+\section{Farmer's guide - ASR system implementation}
 \label{sec:farmers_guide}
+Based on the research results, an all-encompassing farmer's perspective regarding the implementation of an ASR system is presented. Multiple distinctive elements are provided with an interpretation. The information offers handles for a (more) efficient deployment of an Aquifer Storage and Recovery (ASR) system in northern Ghana. 
 
-\section{Fieldwork analysis} 
-\begin{itemize}
-\item{measurement}
-\begin{itemize}
-\item{In well}
-\item{Simplistic test set-up (rope tangle)}
-\item{Multiple locations (representative)}
-\end{itemize}
-\item{Data analysis}
-\begin{itemize}
-\item{Simplified theoretical models - general}
-\item{Simplified theoretical models - confined/unconfined }
-\item{Simplified theoretical models - initial conditions}
-\end{itemize}
-\item{$T$ \& $S$ bandwidth definition}
-\end{itemize}
+%In this part, an all-encompassing view on the research is presented. Multi distinctive elements in the implementation of an ASR system are provided with an interpretation. 
 
-\section{ASR system - Improvements \& sensitivities} 
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=0.35\linewidth]{Farmer}
+ \captionsetup{justification=centering} 
+ \caption[Farmer's impression]{Farmer's impression \\ (visual support by Symbolon from Noun Project - \url{https://thenounproject.com})}
+ \label{fig:Farmer}
+\end{figure}
+
 \begin{itemize}
-\item{Model definition} 
+\item{Geohydrological applicability} \\
+Before any actions on the ASR system can be started, it is of key importance to gain knowledge on the subsurface characteristics. The local geohydrological conditions are decisive in system use and/or configuration. As stated by the scenarios below, the ASR system can not simply be applied at any location in northern Ghana.  
 \begin{itemize}
-\item{Varying flood level and time-frame}
-\item{Homogeneous single layer unconfined aquifer}
-\item{Hlim}
-% why not just pumping at a higher discharge rate? vraagt mark. Maar dat kan niet vanwege: modflow droogvallende cellen om well screen die niet fijn weer zomaar actief worden. onwenselijk vanuit sustainability oogpunt. Onwenselijk vanuit pump placement diepte. onwenselijk van mogelijk onwenselijjke aerobe proccesses als het screen droog komt te liggen. 
-\item{ASR system infiltration bed}
-\item{MODFLOW \texttt{MNW2 CWC} combined with radial scaling}
-\end{itemize}
-\item{Well skin resistance}
-\item{The dimensionless ASR system recharge factor}
+\item{Inadequate conditions (Soil scenarios 1 \& 2)}\\
+A very moderately permeable (scope T: 1 m$^2$/d and S: 1e-3 - 1e-2) subsurface can potentially be present in northern Ghana. When encountered, the local possibilities in maximum groundwater discharges (and total withdrawal volumes) are insufficient. By general system use, too much time will pass to fill a single poly tank. One would do well to seize opportunities somewhere else. 
+\item{Permissible conditions (Soil scenarios 3)}\\
+Within northern Ghana it is possible to encounter subsurface conditions comparable to the location Bingo (scope T: 26.23 m$^2$/d and S: 6.6e-3). Under these geohydrological circumstances, multiple poly tanks (approximately three) can potentially be filled daily by general (as currently applied) pump operation. The conditions are permissible for the implementation of groundwater based dry-season (irrigation) crop cultivation. Perhaps, the magnitude is not adequate for agricultural market purposes. Nonetheless, the system can contribute to the farmer(s) (community) self-sufficiency in food production. 
+\item{Common conditions (Soil scenarios 4 \& 5)}\\
+Although not encountered during research aquifer tests, it is not unthinkable a moderate permeable subsurface (scope T: 100 m$^2$/d and S: 1e-3 - 1e-2) is present in northern Ghana. With these geohydrological conditions, farmers can potentially be supplied with groundwater withdrawn by the ASR system. The foundation is present for (market-oriented) small-scale agriculture. Based on the (scenario 4 and 5) simulated total volume results (Section \ref{section:Base_model_perf}) and the defined crop water consumption (Section \ref{subsec:Yield_crop}), calculations on the back of a napkin suggests small-scale agriculture can be interpreted as multiple acre-size (upto hectare).  
 \end{itemize}
 
-\section{ASR system - Financial magnitude} 
+\item{Existing ASR system} \\
+When an existing ASR system is positioned in one of the latter two conditions (permissible and common subsurface), the fundamental necessities are present for potential operation. The distinctive steps below are set-up for a more efficient use of the system.  
 \begin{itemize}
-\item{Crops of interest}
-\item{Irrigation efficiency}
-\item{Pump - type/efficiencies/working point}
-\item{Power required - head, generator and loss efficiencies}
-\item{Fuel - costs/(generator)consumption}
+\item{System check \& maintenance} \\
+Before the start of the dry-season groundwater withdrawal (irrigation water), one should inspect the well conditions. If the borehole depth deviates from original (borehole log-sheets, Appendix \ref{chapter:Borehole_logsheets}), cleaning is advised. The accumulated sediment (at the bottom) can be removed by the use of a 'pulse drill'. Every bit of sediment that can be removed (increase in active well screen length) will be beneficial for discharge (and recharge) capabilities. Preferably, this check would be done on a regular basis, multiple times a year. And the check should definitely be done before the start of the wet season. In this way, the entire screen length (present) will be active for the flood based recharge (sustainable purposes). The check can for example be done when the lid is put back on the well (wet-season top closure). 
+\item{Discharge schedule \& pump-choice} \\
+When the well depth is adopted as clean (but still before irrigation discharge starts), one should inspect the well discharge performance. The performance of an aquifer test (comparable with pumping test applied in this research) in the well is sufficient. The test provides information on the (maximum) pumping capacities of the system. If the results are labelled as insufficient (for example compared to prior system use) one should take measures in well screen cleaning (skin resistance reduction). As soon as the discharge capacities are labelled as permissible, a dry-season discharge schedule can be made (based on this discharge capacity). In this financial driven schedule, considerations can be made in for example time-span of system use (one or more cropping season(s)) the frequency of system use (daily, every other day, etcetera) and the discharge rates (volumes for daily requirements or temporal storage in one or more poly tank(s)). To avoid unnecessary high operational costs, a specific pump type (pumping curve) should be applied that fits the conditions of the system (and its natural surroundings). Subsequently, the pump should be deployed on its optimal capabilities to guarantee high(er) withdrawal efficiencies. 
+\item{Determination crop type(s)} \\
+The research demonstrates that the financial feasibility is potentially more dominantly affected by the cultivated crop type rather than the implementation of what type of ASR system improvement whatsoever. The system improvement are potentially beneficial, but a 'right' choice in cultivated crop type(s) remains important. It should be considered which crop thrives best by the northern Ghana local conditions (crop quality). The expertise of local farmers can be used in this process. Moreover, the presence of specific market desires should be considered as well. In the end, it is the crop-specific market price that remains decisive in the systems financial feasibility.  
 \end{itemize}
 
-%\textbf{$T$ \& $S$ bandwidth definition}
-%The defined scope can not be interpreted as a generalization of the different locations. Not a single combination of the upper and lower parameter boundaries is the one-on-one representation of a specific location. The bandwidth predominantly acts as an input for scenario modelling in the subsequent parts of this research. Outcome of these scenarios are perhaps quantitatively incorrect, but can qualitatively be interpreted as indication for the impact of ASR-system improvements within northern Ghana. 
+\item{New ASR system construction} \\
+All previously mentioned steps (heading: Existing ASR system) are also applicable on an ASR system that still has to be constructed. In addition, the construction of a new ASR system offers some extra opportunities. 
+
+\begin{itemize}
+\item{Geographic position} \\
+The determination of an ASR systems location is decisive in the later performance. Amongst others, the local geology (stratification) should be sufficient, the location should meet the above mentioned requirements for geohydrological applicability. To be able to be used sustainably, the ASR system should be positioned at a location that is subjected to seasonal flooding. Furthermore, for practical reasons the location should be picked strategically. And so, many more requirement (beyond the scope of this research) should be considered. A detailed preliminary site investigation is advised.
+\item{System composition} \\
+In contrast to an existing system, the composition of a new ASR system can to a certain extent be tubed to desired discharges (and recharges). The (somewhat) improved system performances can potentially be obtained by an extension of the active screen length, enlargement of the well diameter and the installation of a proper (clean) gravel-pack around the well (minimum of 0.125 m radial-length advised). Before these imposed system components are implemented, abundant aspects should be considered. The composition should for example align to local (subsurface) characteristics and an ASR systems business plan. It should be emphasized the discharge an recharge rates can not become endlessly high. This is caused by practical (e.g. soil conditions, limits in drilling diameter and depth) and financial possibilities (e.g. drilling costs). For the specific installation of an ASR system at any location, it is recommended to be advised by an expert (knowledge) first. The detailed content of this report can be used as support in the process of an ASR system composition. \\
+
+%In the case of a present pump, it is advised to match the systems discharge capacities to the capabilities of the pump (pumping curve). Herewith, unnecessary high operational costs are avoided. 
 %
-%\textbf{Discussion - Synthetic model definition} \\
-%The research base model results do not apply to a single research location (depicted in Figure \ref{fig:Overviewlocations}). The applied simplified model conditions serve research purposes. Assumptions made, are not by definition realistic. One can for example imagine the actual wet season inundation levels will fluctuate over time. And in practice, groundwater withdrawal needs day-specific tuning (not constant for 243 days) with respect to agricultural needs. Aspects advisable to take into account in further research.\\
+%(should be mentioned the screen should not be present above surface (an preferably also not in the top part of the infilration bed)
 %
-%\textbf{Discussion - Synthetic model definition}
-%In general, $K_{skin}$ values are typically expected to be lower than the $K_{h}$ \citep{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}. To meet this requirement, the gravel-pack is interpreted as partially clogged. The research base model $K_{gp}$ is assumed to be 1/5 of the $K_{h}$ (soil scenario dependent). \\To get a deeper understanding of the exact values, further (fieldwork) research is advisable. \\
-%Limitation: $K_{skin}$ in research dependent on soil around it. Not the first intention. But could not be done differently, due to MODFLOW model defintion. Standard solver conditions 'failed to meet the solver convergence criteria' if CWC values were defined to high. This height was found to be dependent on the relation with the hydraulic conductivity of the specific soil (scenario dependent). Upto 40 times the soil hydraulic conductance possible. Therefore chosen for $K_{skin}$, as a fraction of $K_{h}$
-%
-%\textbf{Discussion - Synthetic model definition}
-%Note, The actual presence of the ASR system infiltration bed is unaccounted in this research. The potentially applicable bed resistance can cause deviations in the results (recharge, discharge and Recovery ratio) obtained. With regard to this topic, further (fieldwork) research is advisable. 
-%
-%\textbf{Discussion - Synthetic model definition - \texttt{MNW2} skin resistance} \\
-%Little is known about the exact order of skin resistances (well conductance). A topic that can fill an entire individual research. It is for example unknown how to interpret the \texttt{CWC} in relation to a radial scaled MODFLOW model. Moreover, research can also be performed by the inclusion of a laboratory or fieldwork set-up. When fieldwork is done, a combination with infiltration bed resistances is possible. \\
-%
-%\textbf{Discussion - Synthetic model definition - additional options in ASR-system research}\\
-%Simulation are done by a constant flood bound of 2 m for four months. It would be interesting to investigate the ASR-system behaviour under the conditions of temporal flooding (rain-based inundation). \\
-%
-%\textbf{Discussion - Synthetic model definition - sensitivity analysis}\\
-%More sensitivity on for example the set drawdown limitations. 
-%
-%\Textbf{Crops of interest - choice in types uberhaupt, type suitable for local temperatures, water utilization efficiency wel heel erg robuust, market and prices, verwerkingsprocess wel of niet}
+%Ten alle tijden blijft deze implementatie wel afhankelijk van de installatie kosten (beyond the scope of this research). Dus zal een eigen afweging hierin noodzakelijk zijn. 
+\end{itemize}
+\end{itemize}
+
+\section{Research limitations}
+This section describes for each part of the research the potential shortcomings. Where applicable, the limitations are provided with recommendations.  
+
+\subsection{Aquifer test} 
+\textbf{measurement}
+\begin{itemize}
+\item{Simplistic aquifer test set-up} \\
+All aquifer tests are performed by groundwater table (GWT) measurements in the discharge well. A relatively low-cost approach that has its limitations; rope tangle, inflow from the infiltration bed and potential well turbulence. Due to the lack of groundwater measurement in the vicinity of the pumping wells, there is some (more) uncertainty in the derived subsurface parameters ($T$ and $S$). The uncertainty is strengthened by the (relative) short test durations. It is advisable, future pumping tests should be performed for a minimum of 24 hours with at least one (preferably more) observation well at a certain distance from the well \citep{Kruseman2000}. These tests potentially give insight in well skin behaviour (degree of resistance) and increase the amount of data from which subsurface parameters can be derived.
+\item{Hydraulic conductivity infiltration bed} \\
+Due to the absence of equipment and the the presence of insufficient circumstances (inundation and vegetation), the hydraulic conductivities of the ASR system infiltration beds are undetermined.  Since these conditions are decisive in the ASR systems sustainable performance, future research should definitely focus on the infiltration bed. The desired data can for example be gathered by the performance of tension-infiltrometer tests.
+\item{Research locations in northern Ghana} \\
+The performed aquifer tests are applied at five northern Ghana ASR systems, in 2016 commissioned by Conservation Alliance (CA). The results obtained through the analysis of the data can solely be interpreted for these specific ASR systems. The obtained individual values for transmissivity and strorativity can not be assigned to any other ASR system. It is not possible to generalize the outcomes to any other location in the northern Ghana regions. \\
+\end{itemize}
+\textbf{Data analysis}
+\begin{itemize}
+\item{Theoretical models - initial conditions} \\
+The research lacks adequate geological information. In data analysis simplified model stratifications are applied (based on original borehole log-sheets (Appendix \ref{chapter:Borehole_logsheets})). The results (Root-Mean-Square-Error) show, nature is only represented by these models to a certain extent. This can partially be attributed to the process of parameter derivation. The model layer(s) are provided with, literature based, initial parameter conditions. Although minor, these chosen values undeniably affect the outcomes. Due to the application of the simplified models and the adopted initial conditions there is some uncertainty in the geohydrological parameter results. 
+%- Layer definition
+%- confined/unconfined 
+%- initial conditions
+\item{Additional research} \\
+The results obtained through the analysis of the pumping tests seem to yield plausible estimates of subsurface characteristics. However, the models are not able to closely match the observations in all cases. Additional research could be done to expand the models to include processes that were left out in this analysis, e.g. inflow from the infiltration bed and irregularities (sudden additional decrease) in the drawdown time-series. Methods to deal with missing data (gaps in time series) could also be improved upon.\\
+\end{itemize}  
+\textbf{$T$ \& $S$ bandwidth definition}
+\begin{itemize}
+\item{} The defined scope can not be interpreted as a generalization of the different locations. Not a single combination of the upper and lower parameter boundaries is the one-on-one representation of a specific location. The bandwidth predominantly acts as an input for scenario modelling in the subsequent parts of this research. Outcome of these scenarios are perhaps quantitatively incorrect, but can qualitatively be interpreted as indication for the impact of ASR system improvements within northern Ghana. \\
+\end{itemize}
+
+\subsection{ASR system - Improvements \& sensitivities} 
+\textbf{Representation of nature}
+\begin{itemize}
+\item{General model definition} \\
+The synthetic (base) model does not apply to a single research location (presented in Figure \ref{fig:Overviewlocations}). The simplified model conditions are solely defined to serve research purposes. Assumptions made, are not by definition realistic. One can for example imagine, the research results are influenced by the model assumption of a single homogeneous aquifer. In practise, the actual wet season inundation levels will fluctuate over time, the dry season groundwater withdrawal will succeed at a (more) constant pumping rate and the discharge needs day-specific tuning (not constant for 243 days) with respect to agricultural needs. In future research, variations on these model representations of nature can be analysed in more detail. 
+%advisable to take into account in future research.
+%It would be interesting to investigate the ASR-system behaviour under the conditions of temporal flooding (rain-based inundation). 
+\item{Discharge bound - Hlim} \\
+The research explores several types of ASR system improvements. All improvements are focused on the general goal, higher water quantities for the supply of dry-season agriculture. Nonetheless, the simple improvement of raising the discharge rate is ignored. The maximum discharge is (invariable) bounded by a limit in drawdown (maximum $\Delta$h of 14 m). By this limitation, the well screen (perforation) remains below the groundwater table (GWT) at all times. A situation that should be pursued in daily practice, to avoid undesired (chemical, aerobic) subsurface processes. Moreover, the maximum GWT depth (occurs in discharge well) makes sure the submersible pump stays inundated. It reduces the chances of pump malfunctioning. 
+%why not just pumping at a higher discharge rate? vraagt mark. Maar dat kan niet vanwege: modflow droogvallende cellen om well screen die niet fijn weer zomaar actief worden. 
+\item{ASR system infiltration bed} \\
+As mentioned above, the hydraulic conductivities of the ASR system infiltration beds are undetermined. As a consequence, the bed (resistance) is ignored in the synthetic ASR system simulations. The inclusion of a bed resistance (potentially present in practise) can cause deviations in the research results (recharge, discharge and Recovery ratio). Future research is needed to provide more clarity, on for example the sustainable performance of the ASR systems. \\ 
+%\item{Well skin resistance} \\
+%\item{The dimensionless ASR system recharge factor}
+\end{itemize}
+\textbf{MODFLOW}
+\begin{itemize}
+\item{Combination of radial scaling and \texttt{MNW2-CWC}} \\
+The 'Cell-to-Well hydraulic conductance' (\texttt{CWC}) of a MODFLOW \texttt{MNW2} well is standard calculated by Equation \ref{eq:CWC_n} (Appendix \ref{subsec:MODFLOW_MNW2}). The \texttt{CWC} equation consists of (amongst other things) an A- and $CQ_{n}^{(P)}$-term. The A-term represent the linear aquifer-loss coefficient, while the $CQ_{n}^{(P)}$-term accounts for non-linear head losses due to turbulent flow near the well. These terms are understandable in the case of an unmodified (Cartesian geometry) rectangular grid MODFLOW model. However, simulation is performed in a radial scaled model, according to the principles as stated by \citet{Langevin2008}. The well cell width perfectly aligns the radius of the well. It is therefore no longer known how to interpret the A- and $CQ_{n}^{(P)}$-term. To work around this issue, the research well conductances are calculated by the Equations \ref{eq:cond} - \ref{eq:K_skin} (Section \ref{base_model_def}) and implemented as \texttt{CWC} values manually. Future research is needed to determine the use of the \texttt{MNW2-CWC} equation in combination with a radial scaled MODFLOW model. More information on this topic can be found in Appendix \ref{chapter:Extense_Modflow_model}. 
+\item{Well skin resistance} \\
+The research lacks information on well skin resistances of the northern Ghana ASR systems. As mentioned above, by the future application of proper pumping tests the desired information can potentially be obtained. In this research the resistances are based on the Equations \ref{eq:cond} - \ref{eq:K_skin}. In these equations, parameter assumptions are implemented. As stated by \citet{LeonardF.KonikowGeorgeZ.HornbergerKeithJ.Halford2009}, the skin hydraulic conductivity ($K_{skin}$) is typically expected to be lower than the the aquifer hydraulic conductivity ($K_{h}$). To meet this statement, the gravel-pack is interpreted as partially clogged. The research base model gravel-pack hydraulic conductivity ($K_{gp}$) is assumed to be 1/5 of the $K_{h}$. This definition shows, the well hydraulic conductances are soil scenario dependent. Not the original research intention, but inevitable due to MODFLOW model limitations. The implementation of \texttt{CWC} values learned, the standard MODFLOW solver 'failed to meet the solver convergence criteria' if \texttt{CWC} values are defined to high. The upper solving limits are found to be dependent on the hydraulic conductivity of the soil (in model). Dependent on the soil conditions, solving appears to be possible when \texttt{CWC} values are maximally about forty times higher than the soil hydraulic conductivities ($K_{h}$). Additional research is needed to further specify the MODFLOW solver performance. \\
+\end{itemize}
+
+\subsection{ASR system - Business case} 
+\begin{itemize}
+\item{Purpose} \\
+The business case is included in research to offer a rough glimpse on the financial feasibility of an operational ASR systems, potentially applied in northern Ghana conditions. The case does not give a full financial perspective of an ASR system. As stated below, the business case contains strong simplifications and assumptions. The financial results are only qualitatively indicative.
+\item{Crops of interest} \\
+The research crops of interest (Tomato and Groundnut) do not by definition suit the northern Ghana conditions. The chosen crop types are predominantly included to serve research purposes. By the application of the (simple) water utilization efficiencies and wholesale prices, the financial yields are determined in an extremely robust manner. The crop-specific revues should only be interpreted as indicative.
+\item{Irrigation efficiency} \\
+The determination of irrigation type is based on study site visits. Subsequently, the assumed irrigation efficiency is adapted to the statements on drip irrigation described by \citep{VandeGiesen2013}. The assumptions are rough and future research is needed to gather more detailed information on the irrigation efficiency of a northern Ghana ASR system. 
+\item{Pump operation} \\
+The use of the Pedrollo 4" submersible pump in simulations is based on the study site aquifer tests (equipment facilitated). The acquired pumping efficiencies are not by definition realistic. It is for example highly unlikely that in ASR system practice multiple pumps are placed in parallel operation (in the well). Moreover, the generator (pumping) fuel costs are based on multiple rough assumptions (e.g. generator and transmission efficiencies, generator power capacity, fuel consumption and diesel prices). Herewith, the results in costs are highly uncertain. The elaborated efficiencies and operation costs should only be interpreted as indicative. If more details on pumping costs are desired, additional research is advisable.  
+%In the process of pumping e the This specific pump is not by definition needed in combination with ASR systems in northern Ghana. In this research it . is not intended to find an optimal pump type (brand) that suits the 
+\item{Additional research} \\
+The business case contains strong simplifications, uncertainties and is far from complete. Multiple additional components in CAPEX and OPEX can be added. It is unknown to what extent ASR system components are eligible for funds. For a more detailed financial feasibility of an ASR system implemented in northern Ghana, future financial research is advisable. \\
+\end{itemize}

@@ -2,16 +2,15 @@
 
 \bibitem[Bakker, 2010]{Bakker2010}
 Bakker, M. (2010).
-\newblock {Radial Dupuit interface fl ow to assess the aquifer storage and
+\newblock {Radial Dupuit interface flow to assess the aquifer storage and
   recovery potential of saltwater aquifers}.
-\newblock pages 107--115.
+\newblock {\em Hydrogeology Journal}, pages 107--115.
 
 \bibitem[Bakker, 2013a]{Mishra2013}
 Bakker, M. (2013a).
 \newblock {Analytical Modeling of Transient Multilayer Flow}.
-\newblock In Mishra, P.~K. and Kuhlman, K.~L., editors, {\em Advances in
-  Hydrogeology}, volume 9781461464, chapter Chapter 5, pages 95--114. Springer
-  Science+Business Media, New York, NY.
+\newblock In {\em {Advances in Hydrogeology}}, chapter~5, pages 95--114.
+  Springer Science+Business Media, New York, NY.
 
 \bibitem[Bakker, 2013b]{Bakker2013}
 Bakker, M. (2013b).
@@ -21,17 +20,23 @@ Bakker, M. (2013b).
 \bibitem[Bakker and Anderson, 2011]{Bakker2011}
 Bakker, M. and Anderson, E.~I. (2011).
 \newblock {Mechanics of Groundwater Flow}.
-\newblock In Wilderer, P., editor, {\em Treatise on Water Science}, pages
-  115--134. Academic Press, Oxford, United Kingdom, vol. 2 edition.
+\newblock In {\em Treatise on Water Science}, pages 115--134. Academic Press,
+  Oxford, United Kingdom.
 
 \bibitem[Bloomberg, 2018]{Bloomberg2018}
 Bloomberg (2018).
 \newblock {GHS-USD Cross rate currency}.
+\newblock \url{https://www.bloomberg.com/quote/GHSUSD:CUR}.
 
 \bibitem[Bot, 2016]{Bot2016}
 Bot, B. (2016).
 \newblock {\em {Grondwaterzakboekje Gwz2016}}.
 \newblock Bot Raadgevend Ingenieur, Rotterdam.
+
+\bibitem[Bruggeman, 1999]{Bruggeman1999}
+Bruggeman, G.~A. (1999).
+\newblock {\em {Analytical solutions of geohydrological problems}}.
+\newblock Elsevier Science, Amsterdam, The Netherlands, first edit edition.
 
 \bibitem[{Canadian International Development Agency}, 2011]{HAP2011}
 {Canadian International Development Agency} (2011).
@@ -47,19 +52,25 @@ Dillon, P., Pavelic, P., Page, D., Beringen, H., and Ward, J. (2009).
 \bibitem[FAO, 2018a]{FoodandAgriculturalOrganisationoftheUnitedNationsFAO2018a}
 FAO (2018a).
 \newblock {Crop information - Groundnut}.
+\newblock
+  \url{http://www.fao.org/land-water/databases-and-software/crop-information/groundnut/en/}.
 
 \bibitem[FAO, 2018b]{FAO2018a}
 FAO (2018b).
 \newblock {Crop information - Tomato}.
+\newblock
+  \url{http://www.fao.org/land-water/databases-and-software/crop-information/tomato/en/}.
 
 \bibitem[FAO, 2018c]{FoodandAgriculturalOrganisationoftheUnitedNationsFAO2018}
 FAO (2018c).
 \newblock {FAOSTAT - download data - crops}.
+\newblock \url{http://www.fao.org/faostat/en/#data/QC}.
 
 \bibitem[FAO, 2018d]{FAO2018}
 FAO (2018d).
 \newblock {How close are we to {\#}ZeroHunger? - The state of food security and
   nutrition in the world 2017}.
+\newblock \url{http://www.fao.org/state-of-food-security-nutrition/en/}.
 
 \bibitem[Fitts, 2012]{Fitts2012}
 Fitts, C.~R. (2012).
@@ -69,10 +80,12 @@ Fitts, C.~R. (2012).
 \bibitem[Ghana-made, 2018]{Ghana-made2018}
 Ghana-made (2018).
 \newblock {Groundnut}.
+\newblock \url{http://ghana-made.org/market-sectors/groundnut/}.
 
 \bibitem[GlobalPetrolPrices, 2018]{GlobalPetrolPrices2018}
 GlobalPetrolPrices (2018).
-\newblock {Ghana diesel price (litre)}.
+\newblock {Ghana diesel prices, liter}.
+\newblock \url{https://www.globalpetrolprices.com/Ghana/diesel_prices/}.
 
 \bibitem[Harbaugh, 2005]{HarbaughArlen2005}
 Harbaugh, A.~W. (2005).
@@ -128,6 +141,8 @@ Martin, N. (2008).
 \bibitem[{Modern Ghana}, 2018]{ModernGhana2018}
 {Modern Ghana} (2018).
 \newblock {Esoko market}.
+\newblock
+  \url{https://cdn.modernghana.com/images/content/report_content/esoko_market_watchweek_ending_march_22nd1.pdf}.
 
 \bibitem[Niswonger et~al., 2011]{Niswonger2011}
 Niswonger, R.~G., Panday, S., and Motomu, I. (2011).
@@ -155,16 +170,20 @@ Strack, O. D.~L. (1989).
 \bibitem[TS24, 2018]{TS242018}
 TS24 (2018).
 \newblock {KIPOR KDE6700T DIESEL GENERATOR}.
+\newblock
+  \url{https://www.ts24.nl//product_info.php/info/398/Kipor-KDE6700T-Diesel-Generator/}.
 
 \bibitem[{United Nations}, 2014]{UnitedNations2014}
 {United Nations} (2014).
 \newblock {International Decade for Action 'WATER FOR LIFE' 2005-2015 - Water
   and food security}.
+\newblock \url{http://www.un.org/waterforlifedecade/food_security}.
 
 \bibitem[{United Nations}, 2018]{UnitedNations2018}
 {United Nations} (2018).
 \newblock {Sustainable Development Goal 2: End hunger, achieve food security
   and improved nutrition and promote sustainable agriculture}.
+\newblock \url{https://www.un.org/sustainabledevelopment/hunger/}.
 
 \bibitem[van~de Giesen, 2013]{VandeGiesen2013}
 van~de Giesen, N. (2013).

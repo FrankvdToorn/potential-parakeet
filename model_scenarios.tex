@@ -581,20 +581,62 @@ Note, compared to the base model ($\Delta h$ is 8 m) the total discharge volume 
 
 \section{The dimensionless ASR system recharge factor}
 \label{section:dim_fac}
-The prior research sections (\ref{section:ASR_upscaling} - \ref{section:sens_analysis}) contain an abundance of model modifications. The modifications are related to both the ASR system (\ref{section:ASR_upscaling}) and natural conditions (\ref{section:sens_analysis}). Regardless its origin, this section tries to enclose the ASR system performance in terms of recharge in a single 'dimensionless ASR system recharge factor'. \\
-\bigskip
-\bigskip
-\bigskip
-\bigskip
-\bigskip
+The prior research sections (\ref{section:ASR_upscaling} - \ref{section:sens_analysis}) contain an abundance of model modifications. The modifications are related to both the ASR system (\ref{section:ASR_upscaling}) and natural conditions (\ref{section:sens_analysis}). This section tries to expose the relationship between parameters and the ASR system recharge performance. \\
+
+In this process the (recharge) situation of the ASR system is further simplified. The well skin resistance is ignored. As stated by \citet{Bruggeman1999}, the analytical solution of this simplified problem (with constant inundation level) is given by: 
+
+\begin{equation}
+\phi (r, t) = h - \frac{2h}{\pi} \int_{0}^{\infty} \frac{1}{u} h(u, r) \exp ( -\frac{u^2 t}{\beta^2 R^2}) du
+\label{eq:brug_22302}
+\end{equation}
+
+where the "head" function $h(u, r)$ is given by
+
+\begin{equation}
+h (u, r) = \frac{J_0(u) Y_0 (\frac{r}{R}u) - Y_0 (u) J_0 (\frac{r}{R}u)}{J_0^2(u) + Y_0^2(u)}
+\label{eq:brug_22302headfunc}
+\end{equation}
+
+and 
+
+\begin{equation}
+\beta^2 = \frac{S}{kD}
+\label{eq:brug_22302beta}
+\end{equation}
+
+The following boundary conditions are given: \\
+$\phi(r, 0) = 0$, \\
+$\phi (\infty, t) = 0$, \\
+$\phi(R, t) = h$ \\
+
+Derivative of the head function with respect to r:
+
+\begin{equation}
+\frac{ \partial h (u, r)}{\partial r} = \frac{- u J_0(u) Y_1(u \frac{r}{R}) + u Y_0(u) J_1(u \frac{r}{R})}{R (J_0^2(u) + Y_0^2(u))}
+\label{eq:brug_22302deriv}
+\end{equation}
+
+Which means 
+
+\begin{equation}
+\frac{\partial \phi (r, t)}{\partial r} = \frac{2h}{\pi} \int_0^{\infty} \frac{1}{u} \frac{\partial h (u, r)}{\partial r} \exp( -\frac{u^2 t}{\beta^2 R^2}) du
+\label{eq:brug_22302deriv}
+\end{equation}
+
+%The prior research sections (\ref{section:ASR_upscaling} - \ref{section:sens_analysis}) contain an abundance of model modifications. The modifications are related to both the ASR system (\ref{section:ASR_upscaling}) and natural conditions (\ref{section:sens_analysis}). Regardless its origin, this section tries to enclose the ASR system performance in terms of recharge in a single 'dimensionless ASR system recharge factor'. \\
+%\bigskip
+%\bigskip
+%\bigskip
+%\bigskip
+%\bigskip
 
 \section{Results \& Conclusions}
 \label{section:Upscaling_conclusions}
-This section contains conclusions about the performance of an hypothetical  ASR system, potentially applicable on northern Ghana conditions. The conclusions on system performance are drawn from the synthetic base model, the simulated ASR system modifications and the system sensitivity analysis. \\
+This section contains conclusions on the performance of an ASR system, potentially applicable on northern Ghana conditions. The conclusions on system performance are drawn from the synthetic base model, the simulated ASR system modifications and the system sensitivity analysis. \\
 
 %This section contains the conclusions that can be drawn from the site visits and the analysis of pumping test data. The final part of this section describes how this data was used to derive parameters for scenarios to study potential methods for improvements of ASR systems in northern Ghana.  \\
 
-\textbf{Performance of a simulated ASR system in northern Ghana}
+\textbf{Performance of a synthetic ASR system in northern Ghana}
 \begin{itemize}
 \item{Recharge \& discharge volumes } \\
 The total inflow and outflow volumes are both affected by the magnitude of the transmissivity value. An increase of the transmissivity value, in the range of 1 - 100 (m$^2$/d), results in acquired volumes that are significantly higher. The presence of a well skin resistance (transmissivity dependent) may play a role in this context. The bandwidth variance in storativity values, 1e-3 - 1e-2 (-), appears to have only limited influence on the obtained volumes. The shift in storativity values applied (within bandwidth range), sorts minimal effects on the total inflow volume. While, the discharge volumes are somewhat positively affected by an increased storativity. The (small) storativity bandwidth-scope is insufficient to draw further conclusions. 
@@ -607,7 +649,7 @@ Under the applied conditions of subsurface composition and ASR system use,  reco
 \item{Preservation of sustainable use} \\
 Higher total discharge volumes can be obtained by an extension of the dry season daily pumping time. By considering the predefined conditions (e.g. wet season constant 2 m flooding, dry season daily pumping operation of 4 hour), it is advisable pumping operation should not exceed a 6 till 7 hour daily duration (8 months). Independently from the soil scenario, a sustainable system use can in this way potentially be retained. 
 \item{Increase in recharge \& discharge volumes}\\
-In terms of volumes (and Recovery ratios), an ASR system can be improved by both the enlargement of the borehole cross-sectional dimension and the reduction of the well skin resistance. Within the research scope ($r_w$ = 0.0635-0.3175 m and $k_{gp}$ = 0.2-1.8*$K_h$), the obtained base model volumes are more than doubled by these types of improvement. A non linear relation exists between the 'size' of the system improvement and the magnitude of obtained volumes. A significant water profit can be obtained by relative small base model modifications.
+In terms of volumes (and Recovery ratios), an ASR system can be improved by both the enlargement of the borehole cross-sectional dimension and the reduction of the well skin resistance. Within the research scope ($r_w$ = 0.0635-0.3175 m and $k_{gp}$ = 0.2-1.8*$K_h$), the obtained base model volumes are more than doubled by these types of improvement. A non-linear relation exists between the 'size' of the system improvement and the magnitude of obtained volumes. A significant water profit can be obtained by relative small base model modifications.
 \end{itemize}
 
 %Beyond the extents of improvement applied in this research a maximum in obtained water volumes can be expected. 
